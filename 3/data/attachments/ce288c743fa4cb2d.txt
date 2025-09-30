@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTMwVDExOjQxOjI0LjA3NTkxMCIsInVzZXJfaWQiOiI1Njg4NDNhYy0zZjJmLTQzYjQtOWE1Ny0yMWZiNjA3ZTkyMGUifQ.psRZAkGXtY-XV0jPPiC-MP9wXEYyTGhRMV8_874VSJI' \
+  -H 'content-length: 366' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Dream animal particular rate nature.","maxScore":93,"minScore":2,"description":"Win member carry scene eat at from. Word apply son clearly increase go. Skin friend dark star since share. Type more ago claim property.","estimatedTime":"5 weeks","previewFileId":"a382cde3-e764-43ff-b644-aaa54e67ee50","createdByUserId":"568843ac-3f2f-43b4-9a57-21fb607e920e"}'

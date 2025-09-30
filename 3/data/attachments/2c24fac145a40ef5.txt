@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/a4a3636c-5f74-41a4-aa34-49ad160ce4ce' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTMwVDExOjQxOjIxLjIxMzk1MyIsInVzZXJfaWQiOiI1YTZhMTUzYS0zNzY0LTQ4OWQtYjhhOS1lM2EzN2RmN2I1NTkifQ.KE7vVP4b7SXypeguVTNm4r7aJXtsp-elpZ0JZ3iSgmo' \
+  -H 'content-length: 183' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Fast field share condition.","maxScore":82,"minScore":22,"description":"Score single effort marriage. Difficult then support carry report expect.","estimatedTime":"9 weeks"}'

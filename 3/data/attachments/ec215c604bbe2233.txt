@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTMwVDExOjQxOjI2LjAyMDcyMyIsInVzZXJfaWQiOiJkYWU0ZDBlYS0wYmJjLTQzZWMtYTEyYi03ZGE3YWMyZDE2ZTUifQ.o83_ahuI_KJikY8iLYsmBIJcxXgQt1IVVM-OE4_09Rs' \
+  -H 'content-length: 431' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Occur could song Democrat here year friend.","maxScore":72,"minScore":7,"description":"Base debate admit. Do next government. Term summer possible become feeling Democrat.\nSport themselves show break form scientist certain. Agreement boy almost leave when. But development claim.","estimatedTime":"10 weeks","previewFileId":"5f753dfc-cdfd-48df-bc6a-c29e59e6868c","createdByUserId":"dae4d0ea-0bbc-43ec-a12b-7da7ac2d16e5"}'

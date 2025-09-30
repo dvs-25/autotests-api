@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTMwVDExOjQxOjIxLjIxMzk1MyIsInVzZXJfaWQiOiI1YTZhMTUzYS0zNzY0LTQ4OWQtYjhhOS1lM2EzN2RmN2I1NTkifQ.KE7vVP4b7SXypeguVTNm4r7aJXtsp-elpZ0JZ3iSgmo' \
+  -H 'content-length: 384' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Good public change page.","maxScore":89,"minScore":28,"description":"During short without her amount. Cell pressure avoid far. As draw scientist middle.\nHot maybe language. Become contain south pretty quickly. Career serve according.","estimatedTime":"6 weeks","previewFileId":"3e34f16d-abd7-4518-9888-1ca12e129e81","createdByUserId":"5a6a153a-3764-489d-b8a9-e3a37df7b559"}'

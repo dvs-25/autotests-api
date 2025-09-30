@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTMwVDExOjQxOjI2LjAyMDcyMyIsInVzZXJfaWQiOiJkYWU0ZDBlYS0wYmJjLTQzZWMtYTEyYi03ZGE3YWMyZDE2ZTUifQ.o83_ahuI_KJikY8iLYsmBIJcxXgQt1IVVM-OE4_09Rs' \
+  -H 'content-length: 321' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Key meet position.","courseId":"74af49e3-5bd0-4bea-a006-3b2842d0be5a","maxScore":52,"minScore":20,"orderIndex":21,"description":"Sing wall institution many accept stand type. Positive show well low investment environmental father. Choose institution way order long information three.","estimatedTime":"8 weeks"}'

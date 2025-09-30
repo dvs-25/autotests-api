@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTMwVDExOjQxOjIyLjE1NTE0MyIsInVzZXJfaWQiOiJiYzAwMjEyYS0wMWNiLTQ0N2UtOWU0Yi01OGI5MGE2MGVmZmEifQ.-t_CPqCbF-MrIeiI4vDZZ_INJD9OEHBVNKWJtFS7Ep4' \
+  -H 'content-length: 381' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Group network six health seat.","maxScore":59,"minScore":19,"description":"Owner bad debate scientist blue. Option understand door campaign look result. White skin them garden industry without instead. Guy their technology career.","estimatedTime":"10 weeks","previewFileId":"abe2bf56-e7fe-4e33-9777-7061b10dadf5","createdByUserId":"bc00212a-01cb-447e-9e4b-58b90a60effa"}'
