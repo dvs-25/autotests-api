@@ -24,7 +24,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5  # Используем GitHub Action для установки Python
         with:
-          python-version: '3.11'  # Устанавливаем версию Python 3.11 (можно заменить на другую версию)
+          python-version: '3.12'  # Устанавливаем версию Python 3.12 (можно заменить на другую версию)
 
       # 3. Шаг для клонирования репозитория с тестовым сервером в рабочую среду
       - name: Clone test server repository
@@ -56,14 +56,30 @@ jobs:
         run: |
           pytest -m regression --alluredir=allure-results --numprocesses 2  # Запускаем тесты, отмеченные как "regression", генерируем результаты для Allure
 
-      # 8. Шаг для получения истории отчётов Allure, если она существует
-      - name: Get Allure history
-        uses: actions/checkout@v4  # Опять клонируем репозиторий, чтобы получить историю отчётов
-        if: always()  # Всегда выполняем, независимо от успеха или неудачи предыдущих шагов
-        continue-on-error: true  # Если здесь возникнет ошибка, workflow всё равно продолжит выполнение
+      - name: Upload Allure results
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
-          ref: gh-pages  # Указываем ветку gh-pages для получения отчётов
-          path: gh-pages  # Указываем путь для сохранения отчётов
+          name: allure-results
+          path: allure-results
+
+  publish-report:
+    if: always()
+    needs: [ run-tests ]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4 # Опять клонируем репозиторий, чтобы получить историю отчётов
+        with:
+          ref: gh-pages # Указываем ветку gh-pages для получения отчётов
+          path: gh-pages # Указываем путь для сохранения отчётов
+
+      - name: Download Allure results
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results
 
       # 9. Шаг для генерации и отображения отчёта Allure
       - name: Generates Allure Report with history
