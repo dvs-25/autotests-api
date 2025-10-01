@@ -218,3 +218,11 @@ __marimo__/
 # allure
 allure-results
 allure-report
+
+# coverage
+coverage.html
+coverage-results
+coverage-report.json
+coverage-history.json
+
+.DS_Store
