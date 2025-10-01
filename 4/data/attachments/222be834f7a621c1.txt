@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/beb88631-277a-4e3c-86dd-cfb4d1a946a5' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAxVDE4OjAxOjMyLjAyNTk1NyIsInVzZXJfaWQiOiI1OWI0OWMzYy0wY2EzLTRhZTktYWIxNi1hNGZjNTU0YmM2MTgifQ.DxWuykDcNLuCHQNk94fQEW6FvNumu_Ft2viRaruWL7I' \
+  -H 'content-length: 326' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Fire current foot performance myself training kind.","maxScore":75,"minScore":30,"orderIndex":29,"description":"Than reduce sing approach side notice morning.\nRepresent officer economy than. Walk region kind fast.\nBody mother continue available kid. News open before exactly guess mind.","estimatedTime":"2 weeks"}'

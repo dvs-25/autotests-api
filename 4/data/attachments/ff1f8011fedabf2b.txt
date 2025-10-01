@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAxVDE4OjAxOjMwLjI1MDM1MCIsInVzZXJfaWQiOiIzZTVlNzQxYS1iMWVmLTQxOGEtOGNhZi1mMjY4YmNhNTkyYTgifQ.thpx2nkMORrjT51tziJ-NZ99kKmhcTIeChIcKQJt9Is' \
+  -H 'content-length: 383' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Heavy star alone everybody.","maxScore":85,"minScore":5,"description":"Memory every put. Throw base improve sell safe condition. None cause establish as want television radio spend.\nGive office color. Name must operation model sort.","estimatedTime":"6 weeks","previewFileId":"217cd70f-3342-4a00-bebc-4c04d3e3a44d","createdByUserId":"3e5e741a-b1ef-418a-8caf-f268bca592a8"}'

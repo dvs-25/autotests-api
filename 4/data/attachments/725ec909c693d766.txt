@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAxVDE4OjAxOjMzLjI4MDEwMSIsInVzZXJfaWQiOiI4ZDRmNjA3Ni03OTNlLTQ3ZjUtOGU1OS1iZjVlNjk5ODE1ZjAifQ.qNE8i5Pr_savoBTi9Y0JQ0wk0H8ny8jmyoEWZTXQIiw' \
+  -H 'content-length: 281' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Soldier almost house last up oil thank.","maxScore":57,"minScore":26,"description":"Too team early soldier. Method operation trial.","estimatedTime":"9 weeks","previewFileId":"8ce529eb-dfc2-41d7-b42f-c7aeb47ee686","createdByUserId":"8d4f6076-793e-47f5-8e59-bf5e699815f0"}'

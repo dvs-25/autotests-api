@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAxVDE4OjAxOjMyLjY4MzExOSIsInVzZXJfaWQiOiJkZTI3NzViOS1iNDBkLTQ1MGYtYmQ3YS0zNmRlN2I0MDFhN2MifQ.N7p8WAqeP-7fpxxppuCzpSTOxCREzJwzJcpxoS9mj04' \
+  -H 'content-length: 364' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Successful daughter continue hospital.","maxScore":96,"minScore":28,"description":"Leave any claim spend. Happy site hot new police because party defense. Capital write performance degree most site. To between kid.","estimatedTime":"5 weeks","previewFileId":"b2f485ce-f4b7-4cae-8160-eb1ae2534d69","createdByUserId":"de2775b9-b40d-450f-bd7a-36de7b401a7c"}'

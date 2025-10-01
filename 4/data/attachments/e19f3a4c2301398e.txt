@@ -1,0 +1,18 @@
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:82 Check create course response
+INFO     BASE_ASSERTIONS:base.py:38 Check that "title" equals to Watch point federal ever want wear three future.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "max_score" equals to 61
+INFO     BASE_ASSERTIONS:base.py:38 Check that "min_score" equals to 20
+INFO     BASE_ASSERTIONS:base.py:38 Check that "description" equals to Yeah hear reveal husband. And industry product price like agreement.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "estimated_time" equals to 1 weeks
+INFO     BASE_ASSERTIONS:base.py:38 Check that "preview_file_id" equals to 0b6bd04b-1afe-4ab8-bfbc-977eb966c9bd
+INFO     BASE_ASSERTIONS:base.py:38 Check that "created_by_user_id" equals to 35173036-7d06-4f70-b7eb-c78cb0d02aab
+INFO     SCHEMA_ASSERTIONS:schema.py:22 Validating JSON schema

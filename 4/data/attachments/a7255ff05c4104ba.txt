@@ -1,0 +1,17 @@
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:25 Check create exercise response
+INFO     BASE_ASSERTIONS:base.py:38 Check that "title" equals to Book culture soon ask.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "course_id" equals to 0a252d41-fa3d-42f7-808d-4b0d630524d9
+INFO     BASE_ASSERTIONS:base.py:38 Check that "max_score" equals to 66
+INFO     BASE_ASSERTIONS:base.py:38 Check that "min_score" equals to 15
+INFO     BASE_ASSERTIONS:base.py:38 Check that "order_index" equals to 71
+INFO     BASE_ASSERTIONS:base.py:38 Check that "description" equals to Skin game view risk soldier yes full. Perform radio community lead local.
+Garden magazine personal place. None foot significant executive.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "estimated_time" equals to 1 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:22 Validating JSON schema

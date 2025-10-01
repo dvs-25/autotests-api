@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAxVDE4OjAxOjMyLjAyNTk1NyIsInVzZXJfaWQiOiI1OWI0OWMzYy0wY2EzLTRhZTktYWIxNi1hNGZjNTU0YmM2MTgifQ.DxWuykDcNLuCHQNk94fQEW6FvNumu_Ft2viRaruWL7I' \
+  -H 'content-length: 378' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Sure more contain decade never here far.","courseId":"a1c3b3bb-3b72-44b0-9bdf-956486944dd2","maxScore":99,"minScore":16,"orderIndex":16,"description":"Agency industry he main. Himself modern in continue would listen. Art bank eye perhaps able keep.\nPurpose really save idea tonight president. Statement institution operation court foreign.","estimatedTime":"2 weeks"}'

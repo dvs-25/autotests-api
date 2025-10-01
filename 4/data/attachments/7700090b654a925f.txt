@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAxVDE4OjAxOjMzLjk2NzM4OCIsInVzZXJfaWQiOiIwYjExZjdhYS0zMDJjLTRjMmMtYjE0MS1hOTA2YzgxYTE3ODYifQ.Phz8PP7mUKuLC72aRmc8PqDotDPCSq18K_RxWcdFESk' \
+  -H 'content-length: 390' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Trade although example beautiful door same skin.","maxScore":84,"minScore":23,"description":"Other later job notice remember. Huge about research. Water once sport end can.\nDirector quite the product. Goal detail cultural worker something.","estimatedTime":"4 weeks","previewFileId":"ee5c5bf1-2604-48c0-812f-651743486fdc","createdByUserId":"0b11f7aa-302c-4c2c-b141-a906c81a1786"}'

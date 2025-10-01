@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAxVDE4OjAxOjMwLjg0MjQwMSIsInVzZXJfaWQiOiIzNTE3MzAzNi03ZDA2LTRmNzAtYjdlYi1jNzhjYjBkMDJhYWIifQ.LAmX8tdegR3asSm67otm3gRhQyaWr3ngljjf0DXbVy4' \
+  -H 'content-length: 311' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Watch point federal ever want wear three future.","maxScore":61,"minScore":20,"description":"Yeah hear reveal husband. And industry product price like agreement.","estimatedTime":"1 weeks","previewFileId":"0b6bd04b-1afe-4ab8-bfbc-977eb966c9bd","createdByUserId":"35173036-7d06-4f70-b7eb-c78cb0d02aab"}'

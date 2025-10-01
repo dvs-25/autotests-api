@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAxVDE4OjAxOjMyLjAyNTk1NyIsInVzZXJfaWQiOiI1OWI0OWMzYy0wY2EzLTRhZTktYWIxNi1hNGZjNTU0YmM2MTgifQ.DxWuykDcNLuCHQNk94fQEW6FvNumu_Ft2viRaruWL7I' \
+  -H 'content-length: 415' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Much live take identify speech night off than.","maxScore":94,"minScore":10,"description":"Market population south manager long where. Close marriage nature investment threat.\nCity friend hospital office city assume. People determine although trade relate beyond.","estimatedTime":"10 weeks","previewFileId":"7b02f6a5-a553-4f5e-b1a3-9253401d465b","createdByUserId":"59b49c3c-0ca3-4ae9-ab16-a4fc554bc618"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAxVDE4OjAxOjMyLjY4MzExOSIsInVzZXJfaWQiOiJkZTI3NzViOS1iNDBkLTQ1MGYtYmQ3YS0zNmRlN2I0MDFhN2MifQ.N7p8WAqeP-7fpxxppuCzpSTOxCREzJwzJcpxoS9mj04' \
+  -H 'content-length: 375' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Cell order close analysis board expect it.","courseId":"f90e00ea-f22c-4c3f-b965-6bb0e242c65a","maxScore":78,"minScore":8,"orderIndex":28,"description":"Quality without Congress. Television by discussion manage budget wish should.\nTerm before plan leave should sister eight born. Federal could serious activity travel outside become law.","estimatedTime":"9 weeks"}'
