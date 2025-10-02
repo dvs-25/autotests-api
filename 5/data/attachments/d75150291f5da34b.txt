@@ -1,0 +1,25 @@
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:28 Make GET request to http://localhost:8000/api/v1/exercises/f8fc3dd3-6517-4575-bac0-e827df0bb6cd
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/exercises/f8fc3dd3-6517-4575-bac0-e827df0bb6cd
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:88 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:65 Check exercise
+INFO     BASE_ASSERTIONS:base.py:38 Check that "id" equals to f8fc3dd3-6517-4575-bac0-e827df0bb6cd
+INFO     BASE_ASSERTIONS:base.py:38 Check that "title" equals to Reveal view beautiful up under opportunity thing past.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "course_id" equals to 6a1176c3-8914-43f4-9778-5712145be932
+INFO     BASE_ASSERTIONS:base.py:38 Check that "max_score" equals to 61
+INFO     BASE_ASSERTIONS:base.py:38 Check that "min_score" equals to 1
+INFO     BASE_ASSERTIONS:base.py:38 Check that "order_index" equals to 34
+INFO     BASE_ASSERTIONS:base.py:38 Check that "description" equals to Science half democratic success raise. Skill six board book.
+Visit center measure economic age decade federal.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "estimated_time" equals to 9 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:22 Validating JSON schema

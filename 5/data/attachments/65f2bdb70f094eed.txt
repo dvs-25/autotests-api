@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAyVDA5OjU0OjU2LjExMDYzNyIsInVzZXJfaWQiOiI2ODRmZmNhNC0xYzBjLTRiOTUtOTZmMS02OGYyZjU1YmNjNDgifQ.BITgXew3WpQ2y5za7dVOIQ1RTe4LivFq0SgqGs8H1kE' \
+  -H 'content-length: 354' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Why mother agreement movement buy.","maxScore":53,"minScore":30,"description":"Good school economy evening. Cost paper himself certain.\nIndividual far stay seek. Many audience hot line require professor.","estimatedTime":"8 weeks","previewFileId":"9e46e858-875a-4db5-acdd-80d8da4ebc2e","createdByUserId":"684ffca4-1c0c-4b95-96f1-68f2f55bcc48"}'

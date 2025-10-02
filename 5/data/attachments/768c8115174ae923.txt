@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAyVDA5OjU0OjU2Ljc1MTU5MCIsInVzZXJfaWQiOiJjNzY3YWI4OC0zYzY0LTQzNzUtYWNmNi01MmNkNWZhNjIwYmIifQ.FB3dRGPpWipJnoUwgs8ZTN1rypHAy2Boq2L5YXZDCII' \
+  -H 'content-length: 415' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Actually base stage crime other single.","maxScore":54,"minScore":5,"description":"Left into cell high wear interview audience. Call throw oil will no short. Question staff skill street then against.\nTrouble head enjoy threat season call. Energy out food wife old.","estimatedTime":"3 weeks","previewFileId":"dcb7138c-549b-4ad5-8aec-017c2cc3277c","createdByUserId":"c767ab88-3c64-4375-acf6-52cd5fa620bb"}'

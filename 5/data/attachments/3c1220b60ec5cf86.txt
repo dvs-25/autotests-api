@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/a05a4d13-b383-4555-bfb1-794bbd8c4a2b' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAyVDA5OjU0OjUyLjg1NjA5NSIsInVzZXJfaWQiOiIyZWQ1ZGY4ZC1hM2NiLTRjMDctOTkwZS1hOTM3YjMwZDA2NGIifQ.Q0gC1VN8p28qql6WCHtCUJqWhPueWjY_BEFuz65ZDpA' \
+  -H 'content-length: 289' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Year there add somebody about catch end.","maxScore":94,"minScore":6,"description":"Pay whose student site process. Generation board raise heart usually significant certain.\nProtect attack century Republican peace situation item. A detail whole much.","estimatedTime":"6 weeks"}'

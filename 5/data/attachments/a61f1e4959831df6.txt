@@ -1,0 +1,19 @@
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:82 Check create course response
+INFO     BASE_ASSERTIONS:base.py:38 Check that "title" equals to Family edge tell hard.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "max_score" equals to 85
+INFO     BASE_ASSERTIONS:base.py:38 Check that "min_score" equals to 14
+INFO     BASE_ASSERTIONS:base.py:38 Check that "description" equals to Identify voice available. Toward car nothing writer chair wonder. Main drug politics something.
+A likely none show think range. Box catch yeah environmental street. Total section class.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "estimated_time" equals to 2 weeks
+INFO     BASE_ASSERTIONS:base.py:38 Check that "preview_file_id" equals to 447505ab-f19e-41bd-8896-92880a0f9bc5
+INFO     BASE_ASSERTIONS:base.py:38 Check that "created_by_user_id" equals to 8f5db284-5d2f-42e8-9c6f-b93fd5571525
+INFO     SCHEMA_ASSERTIONS:schema.py:22 Validating JSON schema

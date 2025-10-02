@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAyVDA5OjU0OjU2Ljc1MTU5MCIsInVzZXJfaWQiOiJjNzY3YWI4OC0zYzY0LTQzNzUtYWNmNi01MmNkNWZhNjIwYmIifQ.FB3dRGPpWipJnoUwgs8ZTN1rypHAy2Boq2L5YXZDCII' \
+  -H 'content-length: 350' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Paper own more.","courseId":"8c12baa8-0763-4104-b6d6-12c198d0c8a9","maxScore":95,"minScore":24,"orderIndex":67,"description":"Near specific relationship white plan.\nForce hair season number quite catch long gun. A our fly box central serious final.\nWho their least relationship role. Artist charge hour appear.","estimatedTime":"8 weeks"}'

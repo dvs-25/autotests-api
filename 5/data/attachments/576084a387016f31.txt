@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAyVDA5OjU0OjU3LjM1ODU4MCIsInVzZXJfaWQiOiJjMDIxNDc3ZC1hZGQzLTRlMGItODVlNC1jZjkyMjNkOWU2ZWUifQ.HBqRFgs505ClnFz-oWm5BqL94jnOh0gFTmSObALhF0E' \
+  -H 'content-length: 400' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Ability fall kid another.","maxScore":83,"minScore":20,"description":"Stand his deal conference. Conference thing size dinner international task.\nSingle adult official school stock off. With after nation yeah series scientist. Model because a play.","estimatedTime":"10 weeks","previewFileId":"d17c9267-0472-47bf-94d4-abfa21990633","createdByUserId":"c021477d-add3-4e0b-85e4-cf9223d9e6ee"}'

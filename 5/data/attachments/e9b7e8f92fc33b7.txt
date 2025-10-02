@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAyVDA5OjU0OjU1LjUxOTI5NyIsInVzZXJfaWQiOiI3N2RiNTdkZC0wNmI5LTQ0ZmUtYTgzZi1lYzE3Y2EyMGUwYjQifQ.2cKXA-7VU-KRmHmo7oxF92p8GlPtymt3qwszRDrRnHI' \
+  -H 'content-length: 354' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Size assume country cover.","maxScore":94,"minScore":16,"description":"Air this head new collection third yard. International product reveal standard war member. Role interview herself relationship admit.","estimatedTime":"3 weeks","previewFileId":"7f4b565d-178e-44cf-9315-4728b082306a","createdByUserId":"77db57dd-06b9-44fe-a83f-ec17ca20e0b4"}'
