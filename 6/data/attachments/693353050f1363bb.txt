@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/843f9ff9-35bb-4b68-bed1-5b5420d59c8e' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAyVDEwOjE0OjAzLjI0MjI2OSIsInVzZXJfaWQiOiJmYmIyNjgxYi0xMjQ1LTQwNGEtODM1ZS0zNTk5NzNkZmRmNGMifQ.ium46fUwS4bmOD477bM4_se_IUKyMqKQvnPoUWC6JW8' \
+  -H 'content-length: 346' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Include magazine here camera Democrat north work.","maxScore":74,"minScore":4,"orderIndex":99,"description":"Detail table face open contain present. Court win we. Onto do meeting customer.\nAgainst southern film offer six. Industry hand team turn seek green. Garden might thought note professor wide develop.","estimatedTime":"1 weeks"}'

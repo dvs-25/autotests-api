@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAyVDEwOjE0OjAxLjQ4MzAwNiIsInVzZXJfaWQiOiI0NjJmZjM1Ny0yYjY0LTRhZWQtOWIzZS00MjJmN2E2ODI0OGQifQ.x5JGC_L2wLf4p-KDr62Xn3HBEi6nCjwEEpnJOnOK_X8' \
+  -H 'content-length: 384' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Herself maybe vote mind.","maxScore":76,"minScore":19,"description":"Along whether beyond fear. Everything discussion entire still will name information.\nVote move measure drive early that practice. Large support prove everyone none.","estimatedTime":"3 weeks","previewFileId":"f442277d-5824-412f-a54e-5406c46f16d3","createdByUserId":"462ff357-2b64-4aed-9b3e-422f7a68248d"}'

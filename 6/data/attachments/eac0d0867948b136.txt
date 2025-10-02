@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAyVDEwOjE0OjAzLjgyNDA4NyIsInVzZXJfaWQiOiJlMzVlYTFiMy0zNWNiLTQyMzItYWEwMC0zY2JjZTFkMzI5MGIifQ.oZ-1v7nLSRNxWdYfDY85qqXFBk-6SsIa22FWW7hEwNE' \
+  -H 'content-length: 379' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Address southern artist others four.","maxScore":77,"minScore":4,"description":"So during fish arrive. Mr message one human nor new focus.\nHard second fund end summer natural need. While own your full road determine face forget.","estimatedTime":"5 weeks","previewFileId":"acfd1960-235c-4e13-be61-474b3426bcad","createdByUserId":"e35ea1b3-35cb-4232-aa00-3cbce1d3290b"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAyVDEwOjE0OjA1LjA4NjQ4MiIsInVzZXJfaWQiOiI1YjIyZmIxMC1mOTEwLTRkMTMtOWI0Mi1hZGI0MzE3ZTYzMDUifQ.TE5QBQ6EogUXYNn7S0UP1e4DYNtr2xWMJDxHSEw93VM' \
+  -H 'content-length: 360' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Science size people clearly need pick end.","courseId":"af4f8c33-d9af-4a34-8555-c88cff73033f","maxScore":97,"minScore":4,"orderIndex":25,"description":"Possible run note control everybody. Place throughout somebody ability recent carry.\nBoy agree ground different report. When image soldier drug voice lead professional.","estimatedTime":"10 weeks"}'

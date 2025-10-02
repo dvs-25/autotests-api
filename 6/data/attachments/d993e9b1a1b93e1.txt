@@ -1,0 +1,25 @@
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:28 Make GET request to http://localhost:8000/api/v1/exercises/2400b8bc-d762-4c61-9bb9-8565c86d5e9a
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/exercises/2400b8bc-d762-4c61-9bb9-8565c86d5e9a
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:88 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:65 Check exercise
+INFO     BASE_ASSERTIONS:base.py:38 Check that "id" equals to 2400b8bc-d762-4c61-9bb9-8565c86d5e9a
+INFO     BASE_ASSERTIONS:base.py:38 Check that "title" equals to They culture approach think book less.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "course_id" equals to 9bf7d490-64cd-4a04-871f-f0acab2d095a
+INFO     BASE_ASSERTIONS:base.py:38 Check that "max_score" equals to 59
+INFO     BASE_ASSERTIONS:base.py:38 Check that "min_score" equals to 19
+INFO     BASE_ASSERTIONS:base.py:38 Check that "order_index" equals to 16
+INFO     BASE_ASSERTIONS:base.py:38 Check that "description" equals to Under Congress test student. Nation cold now available effect significant particular.
+Economic prevent nearly standard after pay. Officer next several think dinner finish.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "estimated_time" equals to 1 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:22 Validating JSON schema

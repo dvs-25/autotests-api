@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/fd072cfe-3b50-4f3e-a81d-c52481a12c51' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAyVDEwOjE0OjAwLjU4NTQwOCIsInVzZXJfaWQiOiIzYzQzNjc4YS00YmUwLTQ5OTEtOTI3ZC1mZTJiYmUyMTZiOWEifQ.s5JCno0OqRA4w4CXRC1Q0iwgoks1BGlFHKzEGgsrsZs' \
+  -H 'content-length: 311' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Church upon sort somebody course paper think.","maxScore":58,"minScore":9,"description":"Will miss country production forget. Forget political performance science we relationship happen.\nMany grow develop grow court soldier value. Establish floor get real land necessary.","estimatedTime":"10 weeks"}'

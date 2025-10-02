@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAyVDEwOjE0OjAzLjI0MjI2OSIsInVzZXJfaWQiOiJmYmIyNjgxYi0xMjQ1LTQwNGEtODM1ZS0zNTk5NzNkZmRmNGMifQ.ium46fUwS4bmOD477bM4_se_IUKyMqKQvnPoUWC6JW8' \
+  -H 'content-length: 337' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Glass capital account must sea.","courseId":"6b35f902-c9e1-41aa-a79d-347e297d8346","maxScore":97,"minScore":29,"orderIndex":85,"description":"Indicate scientist probably none. Artist by peace try.\nElse election everybody fine book you its. Be fast answer standard story. Tend rest its for possible.","estimatedTime":"9 weeks"}'

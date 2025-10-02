@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAyVDEwOjE0OjA1LjA4NjQ4MiIsInVzZXJfaWQiOiI1YjIyZmIxMC1mOTEwLTRkMTMtOWI0Mi1hZGI0MzE3ZTYzMDUifQ.TE5QBQ6EogUXYNn7S0UP1e4DYNtr2xWMJDxHSEw93VM' \
+  -H 'content-length: 350' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Tree class today marriage middle mother.","maxScore":55,"minScore":14,"description":"Around site kid. Pay determine take blue exist fight.\nEye adult win rule away. Region even black themselves exist.","estimatedTime":"6 weeks","previewFileId":"1950b62d-1e58-417e-a8d5-201b2be30d0d","createdByUserId":"5b22fb10-f910-4d13-9b42-adb4317e6305"}'

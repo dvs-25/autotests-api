@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAyVDEwOjE0OjAwLjU4NTQwOCIsInVzZXJfaWQiOiIzYzQzNjc4YS00YmUwLTQ5OTEtOTI3ZC1mZTJiYmUyMTZiOWEifQ.s5JCno0OqRA4w4CXRC1Q0iwgoks1BGlFHKzEGgsrsZs' \
+  -H 'content-length: 334' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Probably paper true.","maxScore":83,"minScore":18,"description":"Tell push wind nation against outside around. Student two land listen relate. Him general wide condition various group.","estimatedTime":"1 weeks","previewFileId":"039a347e-2b77-4158-8367-4fee6dd1045f","createdByUserId":"3c43678a-4be0-4991-927d-fe2bbe216b9a"}'

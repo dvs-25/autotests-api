@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAyVDEwOjE0OjA0LjQ3NjE5MyIsInVzZXJfaWQiOiJjMTE2M2ZiMi03YzA2LTQzZGYtYmJmYS1hNWM2ZjZiM2RkMGMifQ.qYETi9zYGNnTdIe47mkRcyiE90nw55GDX-SWPh_O29I' \
+  -H 'content-length: 305' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Long direction do here crime cost.","maxScore":94,"minScore":1,"description":"Ok reflect series. Player yeah need law discussion. Majority area reach kind.","estimatedTime":"5 weeks","previewFileId":"d05ad17e-3a3e-4de9-bfdf-2e13700cf99a","createdByUserId":"c1163fb2-7c06-43df-bbfa-a5c6f6b3dd0c"}'

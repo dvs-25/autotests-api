@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAyVDEwOjE0OjAzLjgyNDA4NyIsInVzZXJfaWQiOiJlMzVlYTFiMy0zNWNiLTQyMzItYWEwMC0zY2JjZTFkMzI5MGIifQ.oZ-1v7nLSRNxWdYfDY85qqXFBk-6SsIa22FWW7hEwNE' \
+  -H 'content-length: 359' \
+  -H 'content-type: application/json' \
+  -d '{"title":"They culture approach think book less.","courseId":"9bf7d490-64cd-4a04-871f-f0acab2d095a","maxScore":59,"minScore":19,"orderIndex":16,"description":"Under Congress test student. Nation cold now available effect significant particular.\nEconomic prevent nearly standard after pay. Officer next several think dinner finish.","estimatedTime":"1 weeks"}'

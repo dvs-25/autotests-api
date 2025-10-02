@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTAyVDEwOjE0OjAzLjI0MjI2OSIsInVzZXJfaWQiOiJmYmIyNjgxYi0xMjQ1LTQwNGEtODM1ZS0zNTk5NzNkZmRmNGMifQ.ium46fUwS4bmOD477bM4_se_IUKyMqKQvnPoUWC6JW8' \
+  -H 'content-length: 394' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Industry dog direction provide us.","maxScore":83,"minScore":3,"description":"Imagine change bring nor find heart green. Official defense front value feel age. Color effort north away wait.\nAgent argue her. Health type employee exist marriage.","estimatedTime":"5 weeks","previewFileId":"e9af6df5-9dbe-4ee4-8f7b-0605b4ba1b1c","createdByUserId":"fbb2681b-1245-404a-835e-359973dfdf4c"}'
