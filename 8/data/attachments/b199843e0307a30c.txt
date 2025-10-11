@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTExVDE1OjQ2OjUxLjU3NzAyNCIsInVzZXJfaWQiOiJhMmM5ZmRlMi05MmE0LTRjYzMtOWIzYS0xMWEzNTRlOTUwNmQifQ.yr_SvtEmvITIoCehuJz7MZ0uPPcPVTEUGerr0Lyw9HI' \
+  -H 'content-length: 331' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Attention agree ready prepare.","courseId":"a12a3479-3816-4cb1-8a68-af634d240429","maxScore":94,"minScore":16,"orderIndex":31,"description":"There talk trade page field memory tough. The quickly action meet buy shake.\nTelevision edge reveal suggest. Talk college shake since expect magazine.","estimatedTime":"10 weeks"}'

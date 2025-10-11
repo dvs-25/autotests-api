@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTExVDE1OjQ2OjUyLjIzMzAwMiIsInVzZXJfaWQiOiIzMWM3ZDA1NS05ZTYzLTQ2ZjgtYjAxNS05ZmQzOTA0NTVjYmIifQ.4oQUbVrxIjDKV9ErMrUEBd_OmpWo54RL6VSzbMsP0PA' \
+  -H 'content-length: 381' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Stuff pass loss art.","maxScore":91,"minScore":3,"description":"Bank suffer series occur. Push different now compare. Decade part decide him country think.\nNote or indicate impact feeling level word. From start physical not find.","estimatedTime":"10 weeks","previewFileId":"f91ea46f-ea17-4e88-af40-cc5b6a4da759","createdByUserId":"31c7d055-9e63-46f8-b015-9fd390455cbb"}'

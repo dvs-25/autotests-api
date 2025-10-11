@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTExVDE1OjQ2OjQ3LjczNzM3NiIsInVzZXJfaWQiOiJmODU0NTIzOS1lZmI2LTRmZmYtYTAxOS1lMGZjOWQ5NDY0ZmUifQ.HLDNrpCC7qI1X3JahTILz0u_-nSJiKmJEz7EmbyoXQc' \
+  -H 'content-length: 338' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Push baby peace as off across.","maxScore":67,"minScore":28,"description":"Sort put need wife able performance. Figure line city officer. Never receive least kind policy goal quickly wife.","estimatedTime":"1 weeks","previewFileId":"0d4ce35d-fb3d-4aca-b33a-10c6b46481e5","createdByUserId":"f8545239-efb6-4fff-a019-e0fc9d9464fe"}'
