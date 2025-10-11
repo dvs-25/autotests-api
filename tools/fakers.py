@@ -1,5 +1,5 @@
 from faker import Faker
-
+import time
 
 class Fake:
     """
@@ -36,7 +36,10 @@ class Fake:
         Если не указан, будет использован случайный домен.
         :return: Случайный email.
         """
-        return self.faker.email(domain=domain)
+        # тесты начали падать потому что при создании генерились одинаковые email, пришлось добавить random int
+        email = f"{self.faker.random_int(1,999)}{self.faker.email(domain=domain)}"
+        return email
+
 
     def sentence(self) -> str:
         """

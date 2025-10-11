@@ -2,7 +2,9 @@ import allure
 
 from clients.courses.courses_schema import CourseSchema, UpdateCourseRequestSchema, UpdateCourseResponseSchema, \
     GetCoursesResponseSchema, CreateCourseResponseSchema, CreateCourseRequestSchema, GetCourseResponseSchema
+from clients.errors_schema import InternalErrorResponseSchema
 from tools.assertions.base import assert_equal, assert_length
+from tools.assertions.errors import assert_internal_error_response
 from tools.assertions.files import assert_file
 from tools.assertions.users import assert_user
 from tools.logger import get_logger  # Импортируем функцию для создания логгера
@@ -110,3 +112,17 @@ def assert_get_course_response(
     """
     logger.info("Check get course response")
     assert_course(get_course_response.course, create_course_response.course)
+
+@allure.step("Check course not found response")
+def assert_course_not_found_response(actual: InternalErrorResponseSchema):
+    """
+    Функция для проверки ошибки, если курс не найден на сервере.
+
+    :param actual: Фактический ответ.
+    :raises AssertionError: Если фактический ответ не соответствует ошибке "Course not found"
+    """
+    logger.info("Check file not found response")
+    # Ожидаемое сообщение об ошибке, если курс не найден
+    expected = InternalErrorResponseSchema(details="Course not found")
+    # Используем ранее созданную функцию для проверки внутренней ошибки
+    assert_internal_error_response(actual, expected)

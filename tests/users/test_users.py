@@ -4,6 +4,7 @@ import allure
 import pytest
 from allure_commons.types import Severity
 
+from clients.errors_schema import InternalErrorResponseSchema
 from clients.users.private_users_client import PrivateUsersClient
 from clients.users.public_users_client import PublicUsersClient
 from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema, GetUserResponseSchema, \
@@ -15,7 +16,8 @@ from tools.allure.stories import AllureStory
 from tools.allure.tags import AllureTag  # Импортируем enum AllureTag
 from tools.assertions.base import assert_status_code
 from tools.assertions.schema import validate_json_schema
-from tools.assertions.users import assert_create_user_response, assert_get_user_response, assert_update_user_response
+from tools.assertions.users import assert_create_user_response, assert_get_user_response, assert_update_user_response, \
+    assert_user_not_found_response
 from tools.fakers import fake
 
 
@@ -89,3 +91,29 @@ class TestUsers:
         assert_update_user_response(request, response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
+
+    @allure.tag(AllureTag.DELETE_ENTITY)
+    @allure.story(AllureStory.DELETE_ENTITY)
+    @allure.title("Delete user")
+    @allure.severity(Severity.NORMAL)
+    @allure.sub_suite(AllureStory.DELETE_ENTITY)
+    def test_delete_user(
+            self,
+            function_user: UserFixture,
+            private_users_client: PrivateUsersClient,
+            public_users_client: PublicUsersClient
+    ):
+        request = CreateUserRequestSchema()
+        create_user_response = public_users_client.create_user_api(request)
+        create_user_response_data = CreateUserResponseSchema.model_validate_json(create_user_response.text)
+
+        delete_response = private_users_client.delete_user_api(create_user_response_data.user.id)
+        assert_status_code(delete_response.status_code, HTTPStatus.OK)
+
+        get_response = private_users_client.get_user_api(create_user_response_data.user.id)
+        get_response_data = InternalErrorResponseSchema.model_validate_json(get_response.text)
+
+        assert_status_code(get_response.status_code, HTTPStatus.NOT_FOUND)
+        assert_user_not_found_response(get_response_data)
+
+        validate_json_schema(get_response.json(), get_response_data.model_json_schema())
