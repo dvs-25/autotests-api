@@ -76,3 +76,10 @@ class GetCoursesResponseSchema(BaseModel):
     Описание структуры ответа на получение списка курсов.
     """
     courses: list[CourseSchema]
+
+
+class GetCourseResponseSchema(BaseModel):
+    """
+    Описание структуры ответа получение курса.
+    """
+    course: CourseSchema

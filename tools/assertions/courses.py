@@ -1,7 +1,7 @@
 import allure
 
 from clients.courses.courses_schema import CourseSchema, UpdateCourseRequestSchema, UpdateCourseResponseSchema, \
-    GetCoursesResponseSchema, CreateCourseResponseSchema, CreateCourseRequestSchema
+    GetCoursesResponseSchema, CreateCourseResponseSchema, CreateCourseRequestSchema, GetCourseResponseSchema
 from tools.assertions.base import assert_equal, assert_length
 from tools.assertions.files import assert_file
 from tools.assertions.users import assert_user
@@ -95,3 +95,18 @@ def assert_create_course_response(
         request.created_by_user_id,
         "created_by_user_id"
     )
+
+@allure.step("Check get course response")
+def assert_get_course_response(
+        get_course_response: GetCourseResponseSchema,
+        create_course_response: CreateCourseResponseSchema
+):
+    """
+    Проверяет, что ответ на получение курса соответствует ответу на его создание.
+
+    :param get_course_response: Ответ API при запросе данных курса.
+    :param create_course_response: Ответ API при создании курса.
+    :raises AssertionError: Если данные курса не совпадают.
+    """
+    logger.info("Check get course response")
+    assert_course(get_course_response.course, create_course_response.course)

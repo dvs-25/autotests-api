@@ -1,7 +1,7 @@
 import allure
 
 from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema, GetUserResponseSchema, \
-    UserSchema
+    UserSchema, UpdateUserRequestSchema, UpdateUserResponseSchema
 from tools.assertions.base import assert_equal
 from tools.logger import get_logger  # Импортируем функцию для создания логгера
 
@@ -53,3 +53,18 @@ def assert_get_user_response(
     """
     logger.info("Check get user response")
     assert_user(get_user_response.user, create_user_response.user)
+
+@allure.step("Check update user response")
+def assert_update_user_response(request: UpdateUserRequestSchema, response: UpdateUserResponseSchema):
+    """
+    Проверяет, что ответ на обновление пользователя соответствует запросу.
+
+    :param request: Исходный запрос на обновление пользователя.
+    :param response: Ответ API с данными обновленного пользователя.
+    :raises AssertionError: Если хотя бы одно поле не совпадает.
+    """
+    logger.info("Check update user response")
+    assert_equal(response.user.email, request.email, "email")
+    assert_equal(response.user.last_name, request.last_name, "last_name")
+    assert_equal(response.user.first_name, request.first_name, "first_name")
+    assert_equal(response.user.middle_name, request.middle_name, "middle_name")

@@ -6,7 +6,7 @@ from allure_commons.types import Severity
 
 from clients.courses.courses_client import CoursesClient
 from clients.courses.courses_schema import UpdateCourseRequestSchema, UpdateCourseResponseSchema, GetCoursesQuerySchema, \
-    GetCoursesResponseSchema, CreateCourseRequestSchema, CreateCourseResponseSchema
+    GetCoursesResponseSchema, CreateCourseRequestSchema, CreateCourseResponseSchema, GetCourseResponseSchema
 from fixtures.courses import CourseFixture
 from fixtures.files import FileFixture
 from fixtures.users import UserFixture
@@ -16,7 +16,7 @@ from tools.allure.stories import AllureStory
 from tools.allure.tags import AllureTag
 from tools.assertions.base import assert_status_code
 from tools.assertions.courses import assert_update_course_response, assert_get_courses_response, \
-    assert_create_course_response
+    assert_create_course_response, assert_get_course_response
 from tools.assertions.schema import validate_json_schema
 
 
@@ -83,5 +83,19 @@ class TestCourses:
 
         assert_status_code(response.status_code, HTTPStatus.OK)
         assert_create_course_response(request, response_data)
+
+        validate_json_schema(response.json(), response_data.model_json_schema())
+
+    @allure.tag(AllureTag.GET_ENTITY)
+    @allure.story(AllureStory.GET_ENTITY)
+    @allure.title("Get course by id")
+    @allure.severity(Severity.BLOCKER)
+    @allure.sub_suite(AllureStory.GET_ENTITY)
+    def test_get_course_by_id(self, courses_client: CoursesClient, function_course: CourseFixture):
+        response = courses_client.get_course_api(function_course.response.course.id)
+        response_data = GetCourseResponseSchema.model_validate_json(response.text)
+
+        assert_status_code(response.status_code, HTTPStatus.OK)
+        assert_get_course_response(function_course.response, response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
