@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTExVDE0OjIxOjU0Ljg3NjM2NyIsInVzZXJfaWQiOiI3Y2Y3ODA0Zi1lN2MwLTQwMDAtOGUzNy00NzM3MzkwNDAyMTMifQ.OmEfh1PaCbYhVta5xnT4AIVe2ra1MwLtqw47Doxm8Js' \
+  -H 'content-length: 361' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Interesting card out soon training.","maxScore":91,"minScore":27,"description":"Machine fund describe happen performance up above.\nDraw education often morning from past good family. Her cold concern what case.","estimatedTime":"7 weeks","previewFileId":"54bb301c-f223-4c79-9562-27540fde3e38","createdByUserId":"7cf7804f-e7c0-4000-8e37-473739040213"}'

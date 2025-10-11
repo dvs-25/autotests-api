@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTExVDE0OjIxOjUxLjc0NTM2MSIsInVzZXJfaWQiOiJlODIwZmE5Yi05MWJkLTQ2NTMtOGM0OS1hMTNiZjBmYTYxN2UifQ.2oHKGkKk8wqcONecANT61GbpOfc6k758-DE0kFN8ZK4' \
+  -H 'content-length: 357' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Home individual mouth town whom.","maxScore":97,"minScore":21,"description":"Work church right a structure. This like record front.\nSing clearly first hard. Series speech resource born section down compare.","estimatedTime":"7 weeks","previewFileId":"bd56c177-75a7-4e3a-b607-2c6ecf21bfd2","createdByUserId":"e820fa9b-91bd-4653-8c49-a13bf0fa617e"}'

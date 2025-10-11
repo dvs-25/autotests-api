@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTExVDE0OjIxOjUxLjExNTM0NiIsInVzZXJfaWQiOiJhNThhNWY2Yy1mMjgyLTRjNDItYTE3YS05YmNhYTZmYmUzYWYifQ.k-8wTu6krW-ce9aTfMqkiU62qBYhxw_0R3CJ7MVFLVA' \
+  -H 'content-length: 365' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Through animal why investment executive sense.","maxScore":72,"minScore":1,"description":"Picture hair large customer. Feeling consumer majority.\nSociety war fly other. Manager president us subject thank challenge.","estimatedTime":"7 weeks","previewFileId":"8f2ca082-2e5a-44f5-a16d-a47ffe89d18c","createdByUserId":"a58a5f6c-f282-4c42-a17a-9bcaa6fbe3af"}'
