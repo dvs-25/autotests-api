@@ -7,12 +7,14 @@ from allure_commons.types import Severity
 from clients.authentication.authentication_client import AuthenticationClient
 from clients.authentication.authentication_schema import LoginRequestSchema, LoginResponseSchema, RefreshRequestSchema, \
     RefreshResponseSchema
+from clients.errors_schema import InternalErrorResponseSchema
 from fixtures.users import UserFixture
 from tools.allure.epics import AllureEpic
 from tools.allure.features import AllureFeature
 from tools.allure.stories import AllureStory
 from tools.allure.tags import AllureTag
-from tools.assertions.authentication import assert_login_response, assert_refresh_response
+from tools.assertions.authentication import assert_login_response, assert_refresh_response, \
+    assert_invalid_token_response
 from tools.assertions.base import assert_status_code
 from tools.assertions.schema import validate_json_schema
 
@@ -53,5 +55,19 @@ class TestAuthentication:
 
         assert_status_code(response.status_code, HTTPStatus.OK)
         assert_refresh_response(response_data)
+
+        validate_json_schema(response.json(), response_data.model_json_schema())
+
+    @allure.story(AllureStory.LOGIN)
+    @allure.title("Invalid refresh token")
+    @allure.severity(Severity.CRITICAL)
+    @allure.sub_suite(AllureStory.LOGIN)
+    def test_invalid_refresh_token(self, function_user: UserFixture, authentication_client: AuthenticationClient):
+        request = RefreshRequestSchema()
+        response = authentication_client.refresh_api(request)
+        response_data = InternalErrorResponseSchema.model_validate_json(response.text)
+
+        assert_status_code(response.status_code, HTTPStatus.UNAUTHORIZED)
+        assert_invalid_token_response(response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())

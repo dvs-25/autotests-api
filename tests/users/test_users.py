@@ -4,7 +4,7 @@ import allure
 import pytest
 from allure_commons.types import Severity
 
-from clients.errors_schema import InternalErrorResponseSchema
+from clients.errors_schema import InternalErrorResponseSchema, ValidationErrorResponseSchema
 from clients.users.private_users_client import PrivateUsersClient
 from clients.users.public_users_client import PublicUsersClient
 from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema, GetUserResponseSchema, \
@@ -17,7 +17,7 @@ from tools.allure.tags import AllureTag  # Импортируем enum AllureTag
 from tools.assertions.base import assert_status_code
 from tools.assertions.schema import validate_json_schema
 from tools.assertions.users import assert_create_user_response, assert_get_user_response, assert_update_user_response, \
-    assert_user_not_found_response
+    assert_user_not_found_response, assert_get_user_with_incorrect_user_id_response
 from tools.fakers import fake
 
 
@@ -117,3 +117,17 @@ class TestUsers:
         assert_user_not_found_response(get_response_data)
 
         validate_json_schema(get_response.json(), get_response_data.model_json_schema())
+
+    @allure.tag(AllureTag.VALIDATE_ENTITY)
+    @allure.story(AllureStory.VALIDATE_ENTITY)
+    @allure.title("Get user with incorrect user id")
+    @allure.severity(Severity.NORMAL)
+    @allure.sub_suite(AllureStory.VALIDATE_ENTITY)
+    def test_get_user_with_incorrect_user_id(self, private_users_client: PrivateUsersClient):
+        response = private_users_client.get_user_api(user_id="incorrect-user-id")
+        response_data = ValidationErrorResponseSchema.model_validate_json(response.text)
+
+        assert_status_code(response.status_code, HTTPStatus.UNPROCESSABLE_ENTITY)
+        assert_get_user_with_incorrect_user_id_response(response_data)
+
+        validate_json_schema(response.json(), response_data.model_json_schema())

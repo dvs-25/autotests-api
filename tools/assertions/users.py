@@ -1,10 +1,10 @@
 import allure
 
-from clients.errors_schema import InternalErrorResponseSchema
+from clients.errors_schema import InternalErrorResponseSchema, ValidationErrorResponseSchema, ValidationErrorSchema
 from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema, GetUserResponseSchema, \
     UserSchema, UpdateUserRequestSchema, UpdateUserResponseSchema
 from tools.assertions.base import assert_equal
-from tools.assertions.errors import assert_internal_error_response
+from tools.assertions.errors import assert_internal_error_response, assert_validation_error_response
 from tools.logger import get_logger  # Импортируем функцию для создания логгера
 
 logger = get_logger("USERS_ASSERTIONS")  # Создаем логгер с именем "USERS_ASSERTIONS"
@@ -84,3 +84,31 @@ def assert_user_not_found_response(actual: InternalErrorResponseSchema):
     expected = InternalErrorResponseSchema(details="User not found")
     # Используем ранее созданную функцию для проверки внутренней ошибки
     assert_internal_error_response(actual, expected)
+
+@allure.step("Check get user with incorrect user id response")
+def assert_get_user_with_incorrect_user_id_response(actual: ValidationErrorResponseSchema):
+    """
+    Проверяет, что ответ API на запрос пользователя с некорректным user_id
+    соответствует ожидаемому формату ошибки валидации.
+
+    :param actual: Фактический ответ API с ошибкой валидации
+    :raises AssertionError: Если фактический ответ не соответствует ожидаемому
+    """
+    logger.info("Check get user with incorrect user id response")
+    expected = ValidationErrorResponseSchema(
+        details=[
+            ValidationErrorSchema(
+                type="uuid_parsing",
+                input="incorrect-user-id",
+                context={
+                    "error": "invalid character: expected an optional prefix of `urn:uuid:` "
+                             "followed by [0-9a-fA-F-], found `i` at 1"
+                },
+                message="Input should be a valid UUID, invalid character: "
+                        "expected an optional prefix of `urn:uuid:` "
+                        "followed by [0-9a-fA-F-], found `i` at 1",
+                location=["path", "user_id"]
+            )
+        ]
+    )
+    assert_validation_error_response(actual, expected)

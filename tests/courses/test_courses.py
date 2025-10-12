@@ -7,7 +7,7 @@ from allure_commons.types import Severity
 from clients.courses.courses_client import CoursesClient
 from clients.courses.courses_schema import UpdateCourseRequestSchema, UpdateCourseResponseSchema, GetCoursesQuerySchema, \
     GetCoursesResponseSchema, CreateCourseRequestSchema, CreateCourseResponseSchema, GetCourseResponseSchema
-from clients.errors_schema import InternalErrorResponseSchema
+from clients.errors_schema import InternalErrorResponseSchema, ValidationErrorResponseSchema
 from fixtures.courses import CourseFixture
 from fixtures.files import FileFixture
 from fixtures.users import UserFixture
@@ -17,7 +17,8 @@ from tools.allure.stories import AllureStory
 from tools.allure.tags import AllureTag
 from tools.assertions.base import assert_status_code
 from tools.assertions.courses import assert_update_course_response, assert_get_courses_response, \
-    assert_create_course_response, assert_get_course_response, assert_course_not_found_response
+    assert_create_course_response, assert_get_course_response, assert_course_not_found_response, \
+    assert_get_course_with_incorrect_course_id_response
 from tools.assertions.schema import validate_json_schema
 
 
@@ -117,3 +118,17 @@ class TestCourses:
         assert_course_not_found_response(get_response_data)
 
         validate_json_schema(get_response.json(), get_response_data.model_json_schema())
+
+    @allure.tag(AllureTag.VALIDATE_ENTITY)
+    @allure.story(AllureStory.VALIDATE_ENTITY)
+    @allure.title("Get course with incorrect course id")
+    @allure.severity(Severity.NORMAL)
+    @allure.sub_suite(AllureStory.VALIDATE_ENTITY)
+    def test_get_course_with_incorrect_course_id(self, courses_client: CoursesClient):
+        response = courses_client.get_course_api(course_id="incorrect-course-id")
+        response_data = ValidationErrorResponseSchema.model_validate_json(response.text)
+
+        assert_status_code(response.status_code, HTTPStatus.UNPROCESSABLE_ENTITY)
+        assert_get_course_with_incorrect_course_id_response(response_data)
+
+        validate_json_schema(response.json(), response_data.model_json_schema())

@@ -2,9 +2,9 @@ import allure
 
 from clients.courses.courses_schema import CourseSchema, UpdateCourseRequestSchema, UpdateCourseResponseSchema, \
     GetCoursesResponseSchema, CreateCourseResponseSchema, CreateCourseRequestSchema, GetCourseResponseSchema
-from clients.errors_schema import InternalErrorResponseSchema
+from clients.errors_schema import InternalErrorResponseSchema, ValidationErrorResponseSchema, ValidationErrorSchema
 from tools.assertions.base import assert_equal, assert_length
-from tools.assertions.errors import assert_internal_error_response
+from tools.assertions.errors import assert_internal_error_response, assert_validation_error_response
 from tools.assertions.files import assert_file
 from tools.assertions.users import assert_user
 from tools.logger import get_logger  # Импортируем функцию для создания логгера
@@ -126,3 +126,31 @@ def assert_course_not_found_response(actual: InternalErrorResponseSchema):
     expected = InternalErrorResponseSchema(details="Course not found")
     # Используем ранее созданную функцию для проверки внутренней ошибки
     assert_internal_error_response(actual, expected)
+
+@allure.step("Check get course with incorrect course id response")
+def assert_get_course_with_incorrect_course_id_response(actual: ValidationErrorResponseSchema):
+    """
+    Проверяет, что ответ API на запрос курса с некорректным course_id
+    соответствует ожидаемому формату ошибки валидации.
+
+    :param actual: Фактический ответ API с ошибкой валидации
+    :raises AssertionError: Если фактический ответ не соответствует ожидаемому
+    """
+    logger.info("Check get course with incorrect course id response")
+    expected = ValidationErrorResponseSchema(
+        details=[
+            ValidationErrorSchema(
+                type="uuid_parsing",
+                input="incorrect-course-id",
+                context={
+                    "error": "invalid character: expected an optional prefix of `urn:uuid:` "
+                             "followed by [0-9a-fA-F-], found `i` at 1"
+                },
+                message="Input should be a valid UUID, invalid character: "
+                        "expected an optional prefix of `urn:uuid:` "
+                        "followed by [0-9a-fA-F-], found `i` at 1",
+                location=["path", "course_id"]
+            )
+        ]
+    )
+    assert_validation_error_response(actual, expected)
