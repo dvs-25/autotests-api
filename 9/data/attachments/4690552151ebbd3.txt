@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTEyVDEyOjMyOjM1LjYzMzEyMCIsInVzZXJfaWQiOiJhMTY0Y2ZkOS0yZDQyLTQ5OWMtOGY3NC05YTQyZDkwYjcxYzEifQ.o_7_jOfBWz6ocMW4rLKiWMMp0xMA4A4kOB8dDHZNXA0' \
+  -H 'content-length: 348' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Building every ok project first.","maxScore":76,"minScore":17,"description":"Art kitchen quickly expect color wind middle region. To do performance. Director television cold coach attack along goal.","estimatedTime":"6 weeks","previewFileId":"3598e4c6-ed51-484f-b746-108ab84647a6","createdByUserId":"a164cfd9-2d42-499c-8f74-9a42d90b71c1"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTEyVDEyOjMyOjM3LjY5NzY0MCIsInVzZXJfaWQiOiIzYmE2YTcxZS1iMzMzLTQxM2QtYjA5MS02Y2Q5N2E0OTk5OTQifQ.vddY0SGqo9laLaH5FzcDovF4hMIyUs4MCRtJiYbJOSw' \
+  -H 'content-length: 420' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Operation east reduce low station eight.","maxScore":80,"minScore":15,"description":"Piece first for state me local week traditional. View right receive response. Son help kind west.\nCup whose middle success. Operation data information company focus. Impact third mean.","estimatedTime":"2 weeks","previewFileId":"f3e89285-da90-4477-bcd0-171a1b2e5c97","createdByUserId":"3ba6a71e-b333-413d-b091-6cd97a499994"}'

@@ -1,0 +1,32 @@
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:28 Make GET request to http://localhost:8000/api/v1/courses/64069431-ed71-4f80-b0f4-fcdc2ccce1f8
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses/64069431-ed71-4f80-b0f4-fcdc2ccce1f8
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:113 Check get course response
+INFO     COURSES_ASSERTIONS:courses.py:42 Check course
+INFO     BASE_ASSERTIONS:base.py:38 Check that "id" equals to 64069431-ed71-4f80-b0f4-fcdc2ccce1f8
+INFO     BASE_ASSERTIONS:base.py:38 Check that "title" equals to Nice indicate role give point successful.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "max_score" equals to 83
+INFO     BASE_ASSERTIONS:base.py:38 Check that "min_score" equals to 13
+INFO     BASE_ASSERTIONS:base.py:38 Check that "description" equals to Art color modern reduce piece ahead. Two simple tax whole.
+About year investment recently everybody. Myself nor ahead camera cover. Decade many talk science many evening religious.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "estimated_time" equals to 5 weeks
+INFO     FILES_ASSERTIONS:files.py:40 Check file
+INFO     BASE_ASSERTIONS:base.py:38 Check that "id" equals to 3ce64a11-30aa-43cb-aff2-ee3d2a98dd9e
+INFO     BASE_ASSERTIONS:base.py:38 Check that "url" equals to http://localhost:8000/static/tests/2b35c21d-441d-4ae7-9729-06cfbcbb9dc1.png
+INFO     BASE_ASSERTIONS:base.py:38 Check that "filename" equals to 2b35c21d-441d-4ae7-9729-06cfbcbb9dc1.png
+INFO     BASE_ASSERTIONS:base.py:38 Check that "directory" equals to tests
+INFO     USERS_ASSERTIONS:users.py:37 Check user
+INFO     BASE_ASSERTIONS:base.py:38 Check that "id" equals to 1c59c321-3be0-4ac1-a62c-85ded90a25ee
+INFO     BASE_ASSERTIONS:base.py:38 Check that "email" equals to 383xcoleman@example.com
+INFO     BASE_ASSERTIONS:base.py:38 Check that "last_name" equals to Duncan
+INFO     BASE_ASSERTIONS:base.py:38 Check that "first_name" equals to Edward
+INFO     BASE_ASSERTIONS:base.py:38 Check that "middle_name" equals to Anthony
+INFO     SCHEMA_ASSERTIONS:schema.py:22 Validating JSON schema

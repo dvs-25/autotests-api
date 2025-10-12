@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTEyVDEyOjMyOjQxLjMwMzE2OSIsInVzZXJfaWQiOiJhOWFmYmJkZS1lMjg0LTQ4ZDgtYmY1MS1jOTMzYTdiOThkNjgifQ.Gi31L6onkX5L_sVEJb1c8cvHt8DAAcDw07tq6Nkczds' \
+  -H 'content-length: 337' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Eat special sort after raise.","maxScore":81,"minScore":19,"description":"Let turn ability same strategy. Test see local party although growth. Store computer prepare series admit center.","estimatedTime":"9 weeks","previewFileId":"998b3f80-23a6-4a73-8a9f-90a33c29afca","createdByUserId":"a9afbbde-e284-48d8-bf51-c933a7b98d68"}'

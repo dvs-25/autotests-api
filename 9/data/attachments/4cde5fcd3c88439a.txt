@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTEyVDEyOjMyOjQxLjk1MDA3MiIsInVzZXJfaWQiOiI0OWViY2JkMi0xYTZhLTQ5OWYtYWZhZi1lMTdiNDViMDU2ZDAifQ.Gka35EXgFVFlg5XETTUt2Esb0t2AvVwcGpTVd-lci6M' \
+  -H 'content-length: 361' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Simple last gas two born able natural list.","maxScore":51,"minScore":6,"description":"Enter once sell join.\nAround evidence determine able really. Mother agent view much future. Beyond water black four design.","estimatedTime":"2 weeks","previewFileId":"56786934-a1b6-42ad-a799-f94384a29f12","createdByUserId":"49ebcbd2-1a6a-499f-afaf-e17b45b056d0"}'

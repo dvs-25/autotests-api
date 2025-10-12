@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/5d97c015-89ed-4ac5-958c-39e5ab45de4f' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTEyVDEyOjMyOjM1LjYzMzEyMCIsInVzZXJfaWQiOiJhMTY0Y2ZkOS0yZDQyLTQ5OWMtOGY3NC05YTQyZDkwYjcxYzEifQ.o_7_jOfBWz6ocMW4rLKiWMMp0xMA4A4kOB8dDHZNXA0' \
+  -H 'content-length: 219' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Hot word people business baby least.","maxScore":84,"minScore":12,"description":"Whether sometimes bit attack ball. Also during thought career. Professor pattern market significant.","estimatedTime":"8 weeks"}'

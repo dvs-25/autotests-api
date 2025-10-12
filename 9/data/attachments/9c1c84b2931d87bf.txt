@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTEyVDEyOjMyOjM4LjI5MzIzNiIsInVzZXJfaWQiOiIxYzU5YzMyMS0zYmUwLTRhYzEtYTYyYy04NWRlZDkwYTI1ZWUifQ.vlJEcu_0UKajghK5csu2mzwUnaGfy3pW81xuiQ9DfR8' \
+  -H 'content-length: 417' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Nice indicate role give point successful.","maxScore":83,"minScore":13,"description":"Art color modern reduce piece ahead. Two simple tax whole.\nAbout year investment recently everybody. Myself nor ahead camera cover. Decade many talk science many evening religious.","estimatedTime":"5 weeks","previewFileId":"3ce64a11-30aa-43cb-aff2-ee3d2a98dd9e","createdByUserId":"1c59c321-3be0-4ac1-a62c-85ded90a25ee"}'
