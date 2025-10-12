@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTEyVDEzOjQ4OjAwLjUyMjI1NCIsInVzZXJfaWQiOiI4NTI3MTUzMy1hZGEyLTQwZjEtYTJjMS0zYmMxZGQyMzYzMzcifQ.BcNaUREoaVMurLeycQJ-yDJgKbMSYQcasRw4ZL45Tmw' \
+  -H 'content-length: 424' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Father candidate cover certainly again quickly three.","maxScore":77,"minScore":5,"description":"Interview Mrs serve else. Late former find value lay decade possible.\nDifferent since another water argue. Better compare my focus more just total ground. Seat PM name realize.","estimatedTime":"5 weeks","previewFileId":"4ed57d8a-fae8-4368-9def-6b4cf7344ec0","createdByUserId":"85271533-ada2-40f1-a2c1-3bc1dd236337"}'

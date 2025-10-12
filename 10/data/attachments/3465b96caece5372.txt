@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTEyVDEzOjQ4OjAxLjEwODc2MCIsInVzZXJfaWQiOiJhOGEyZGM0Ny03ZTM5LTQ2NjYtOGNiOC1iMjZlOTgzMjJiMWEifQ.pRfVPtNxv3Nl14bxNTtJo7Nsbdg4dqTxQvbsTYgAow8' \
+  -H 'content-length: 354' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Go staff we poor ten create real technology.","maxScore":91,"minScore":22,"description":"Action man decision responsibility term. Laugh staff table interest feeling. Man song miss president idea make per.","estimatedTime":"9 weeks","previewFileId":"ccb7c44f-0d18-4153-9bc2-5351f4485e0e","createdByUserId":"a8a2dc47-7e39-4666-8cb8-b26e98322b1a"}'

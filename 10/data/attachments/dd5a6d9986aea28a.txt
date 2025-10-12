@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTEyVDEzOjQ3OjU5LjI4MTY0NCIsInVzZXJfaWQiOiJmOWExNjU3Mi02YjEyLTQwMmYtYjhkNy0zNDkwYTAxNDdlNWMifQ.lO-_Hi0NImyUc6Ybpu4qnSmQOuA-i5QZewdkRF8f_iU' \
+  -H 'content-length: 433' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Fight memory tree four test condition author.","maxScore":51,"minScore":28,"description":"Good pay suddenly away performance. Century outside rise two my could practice. Travel while class.\nWho detail key animal test. Glass career word month beat. Full into involve plant game war.","estimatedTime":"10 weeks","previewFileId":"abd1ff86-082c-452d-a2ff-53b6de6bfb90","createdByUserId":"f9a16572-6b12-402f-b8d7-3490a0147e5c"}'

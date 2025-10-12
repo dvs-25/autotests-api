@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTEyVDEzOjQ4OjAyLjk1Nzc1NCIsInVzZXJfaWQiOiIxN2ExMWQyZi0zZmYyLTQ1ODctYmU3Zi1iYWNkNjJhMzM2OWQifQ.FOnTdxPhB2s2M4rwZvyuDga2owgfnURmPfosRm7ehc8' \
+  -H 'content-length: 348' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Action quality imagine defense.","maxScore":50,"minScore":12,"description":"Figure course range current. Side expect development against choice surface program. Edge value energy according decision.","estimatedTime":"1 weeks","previewFileId":"3a4b19ba-80ed-48b5-9c83-c121a04a984b","createdByUserId":"17a11d2f-3ff2-4587-be7f-bacd62a3369d"}'
