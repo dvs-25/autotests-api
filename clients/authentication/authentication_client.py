@@ -14,7 +14,6 @@ class AuthenticationClient(APIClient):
     """
 
     @allure.step("Authenticate user")
-    # Добавили сбор покрытия для эндпоинта POST /api/v1/authentication/login
     @tracker.track_coverage_httpx(f"{APIRoutes.AUTHENTICATION}/login")
     def login_api(self, request: LoginRequestSchema) -> Response:
         """
@@ -23,14 +22,13 @@ class AuthenticationClient(APIClient):
         :param request: Словарь с email и password.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        # Вместо /api/v1/authentication используем APIRoutes.AUTHENTICATION
+
         return self.post(
             f"{APIRoutes.AUTHENTICATION}/login",
             json=request.model_dump(by_alias=True)
         )
 
     @allure.step("Refresh authentication token")
-    # Добавили сбор покрытия для эндпоинта POST /api/v1/authentication/refresh
     @tracker.track_coverage_httpx(f"{APIRoutes.AUTHENTICATION}/refresh")
     def refresh_api(self, request: RefreshRequestSchema) -> Response:
         """
@@ -39,16 +37,15 @@ class AuthenticationClient(APIClient):
         :param request: Словарь с refreshToken.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        # Вместо /api/v1/authentication используем APIRoutes.AUTHENTICATION
+
         return self.post(
             f"{APIRoutes.AUTHENTICATION}/refresh",
             json=request.model_dump(by_alias=True)
         )
 
-    # Теперь используем pydantic-модель для аннотации
     def login(self, request: LoginRequestSchema) -> LoginResponseSchema:
         response = self.login_api(request)
-        # Инициализируем модель через валидацию JSON строки
+
         return LoginResponseSchema.model_validate_json(response.text)
 
 

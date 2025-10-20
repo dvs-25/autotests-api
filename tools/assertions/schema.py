@@ -18,7 +18,7 @@ def validate_json_schema(instance: Any, schema: dict) -> None:
     :param schema: Ожидаемая JSON-schema.
     :raises jsonschema.exceptions.ValidationError: Если instance не соответствует schema.
     """
-    # Логируем факт начала валидации
+
     logger.info("Validating JSON schema")
 
     validate(

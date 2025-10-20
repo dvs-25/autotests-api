@@ -7,9 +7,10 @@ from tools.assertions.base import assert_equal, assert_length
 from tools.assertions.errors import assert_internal_error_response, assert_validation_error_response
 from tools.assertions.files import assert_file
 from tools.assertions.users import assert_user
-from tools.logger import get_logger  # Импортируем функцию для создания логгера
+from tools.logger import get_logger
 
-logger = get_logger("COURSES_ASSERTIONS")  # Создаем логгер с именем "COURSES_ASSERTIONS"
+logger = get_logger("COURSES_ASSERTIONS")
+
 
 @allure.step("Check update course response")
 def assert_update_course_response(
@@ -30,6 +31,7 @@ def assert_update_course_response(
     assert_equal(response.course.description, request.description, "description")
     assert_equal(response.course.estimated_time, request.estimated_time, "estimated_time")
 
+
 @allure.step("Check course")
 def assert_course(actual: CourseSchema, expected: CourseSchema):
     """
@@ -49,6 +51,7 @@ def assert_course(actual: CourseSchema, expected: CourseSchema):
 
     assert_file(actual.preview_file, expected.preview_file)
     assert_user(actual.created_by_user, expected.created_by_user)
+
 
 @allure.step("Check get courses response")
 def assert_get_courses_response(
@@ -98,6 +101,7 @@ def assert_create_course_response(
         "created_by_user_id"
     )
 
+
 @allure.step("Check get course response")
 def assert_get_course_response(
         get_course_response: GetCourseResponseSchema,
@@ -113,6 +117,7 @@ def assert_get_course_response(
     logger.info("Check get course response")
     assert_course(get_course_response.course, create_course_response.course)
 
+
 @allure.step("Check course not found response")
 def assert_course_not_found_response(actual: InternalErrorResponseSchema):
     """
@@ -122,10 +127,9 @@ def assert_course_not_found_response(actual: InternalErrorResponseSchema):
     :raises AssertionError: Если фактический ответ не соответствует ошибке "Course not found"
     """
     logger.info("Check file not found response")
-    # Ожидаемое сообщение об ошибке, если курс не найден
     expected = InternalErrorResponseSchema(details="Course not found")
-    # Используем ранее созданную функцию для проверки внутренней ошибки
     assert_internal_error_response(actual, expected)
+
 
 @allure.step("Check get course with incorrect course id response")
 def assert_get_course_with_incorrect_course_id_response(actual: ValidationErrorResponseSchema):

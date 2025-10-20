@@ -24,6 +24,7 @@ class ValidationErrorResponseSchema(BaseModel):
 
     details: list[ValidationErrorSchema] = Field(alias="detail")
 
+
 class InternalErrorResponseSchema(BaseModel):
     """
     Модель для описания внутренней ошибки.

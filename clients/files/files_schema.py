@@ -1,6 +1,7 @@
 from pydantic import BaseModel, HttpUrl, Field, FilePath
 from tools.fakers import fake
 
+
 class FileSchema(BaseModel):
     """
     Описание структуры файла.

@@ -31,7 +31,7 @@ from tools.fakers import fake
 class TestUsers:
     @pytest.mark.parametrize("email", ["mail.ru", "gmail.com", "example.com"])
     @allure.tag(AllureTag.CREATE_ENTITY)
-    @allure.story(AllureStory.CREATE_ENTITY)# Тег для конкретного теста
+    @allure.story(AllureStory.CREATE_ENTITY)  # Тег для конкретного теста
     @allure.title("Create user")  # Добавляем человекочитаемый заголовок
     @allure.severity(Severity.BLOCKER)  # Добавили severity
     @allure.sub_suite(AllureStory.CREATE_ENTITY)  # allure.sub_suite == allure.story

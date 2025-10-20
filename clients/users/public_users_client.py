@@ -7,13 +7,13 @@ from clients.public_http_builder import get_public_http_client
 from clients.users.users_schema import CreateUserResponseSchema, CreateUserRequestSchema
 from tools.routes import APIRoutes
 
+
 class PublicUsersClient(APIClient):
     """
     Клиент для работы с /api/v1/users
     """
 
     @allure.step("Create user")
-    # Добавили сбор покрытия для эндпоинта POST /api/v1/users
     @tracker.track_coverage_httpx(APIRoutes.USERS)
     def create_user_api(self, request: CreateUserRequestSchema) -> Response:
         """
@@ -22,7 +22,7 @@ class PublicUsersClient(APIClient):
         :param request: Словарь с email, password, lastName, firstName, middleName.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        # Вместо /api/v1/users используем APIRoutes.USERS
+
         return self.post(APIRoutes.USERS, json=request.model_dump(by_alias=True))
 
     def create_user(self, request: CreateUserRequestSchema) -> CreateUserResponseSchema:

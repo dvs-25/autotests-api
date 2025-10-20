@@ -2,9 +2,9 @@ from typing import Any, Sized
 
 import allure
 
-from tools.logger import get_logger  # Импортируем функцию для создания логгера
+from tools.logger import get_logger
 
-logger = get_logger("BASE_ASSERTIONS")  # Создаем логгер с именем "BASE_ASSERTIONS"
+logger = get_logger("BASE_ASSERTIONS")
 
 
 @allure.step("Check that response status code equals to {expected}")

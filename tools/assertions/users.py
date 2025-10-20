@@ -5,9 +5,10 @@ from clients.users.users_schema import CreateUserRequestSchema, CreateUserRespon
     UserSchema, UpdateUserRequestSchema, UpdateUserResponseSchema
 from tools.assertions.base import assert_equal
 from tools.assertions.errors import assert_internal_error_response, assert_validation_error_response
-from tools.logger import get_logger  # Импортируем функцию для создания логгера
+from tools.logger import get_logger
 
-logger = get_logger("USERS_ASSERTIONS")  # Создаем логгер с именем "USERS_ASSERTIONS"
+logger = get_logger("USERS_ASSERTIONS")
+
 
 @allure.step("Check create user response")
 def assert_create_user_response(request: CreateUserRequestSchema, response: CreateUserResponseSchema):
@@ -18,12 +19,13 @@ def assert_create_user_response(request: CreateUserRequestSchema, response: Crea
     :param response: Ответ API с данными пользователя.
     :raises AssertionError: Если хотя бы одно поле не совпадает.
     """
-    # Логируем факт начала проверки
+
     logger.info("Check create user response")
     assert_equal(response.user.email, request.email, "email")
     assert_equal(response.user.last_name, request.last_name, "last_name")
     assert_equal(response.user.first_name, request.first_name, "first_name")
     assert_equal(response.user.middle_name, request.middle_name, "middle_name")
+
 
 @allure.step("Check user")
 def assert_user(actual: UserSchema, expected: UserSchema):
@@ -41,6 +43,7 @@ def assert_user(actual: UserSchema, expected: UserSchema):
     assert_equal(actual.first_name, expected.first_name, "first_name")
     assert_equal(actual.middle_name, expected.middle_name, "middle_name")
 
+
 @allure.step("Check get user response")
 def assert_get_user_response(
         get_user_response: GetUserResponseSchema,
@@ -55,6 +58,7 @@ def assert_get_user_response(
     """
     logger.info("Check get user response")
     assert_user(get_user_response.user, create_user_response.user)
+
 
 @allure.step("Check update user response")
 def assert_update_user_response(request: UpdateUserRequestSchema, response: UpdateUserResponseSchema):
@@ -71,6 +75,7 @@ def assert_update_user_response(request: UpdateUserRequestSchema, response: Upda
     assert_equal(response.user.first_name, request.first_name, "first_name")
     assert_equal(response.user.middle_name, request.middle_name, "middle_name")
 
+
 @allure.step("Check user not found response")
 def assert_user_not_found_response(actual: InternalErrorResponseSchema):
     """
@@ -80,10 +85,11 @@ def assert_user_not_found_response(actual: InternalErrorResponseSchema):
     :raises AssertionError: Если фактический ответ не соответствует ошибке "User not found"
     """
     logger.info("Check user not found response")
-    # Ожидаемое сообщение об ошибке, если файл не найден
+
     expected = InternalErrorResponseSchema(details="User not found")
-    # Используем ранее созданную функцию для проверки внутренней ошибки
+
     assert_internal_error_response(actual, expected)
+
 
 @allure.step("Check get user with incorrect user id response")
 def assert_get_user_with_incorrect_user_id_response(actual: ValidationErrorResponseSchema):

@@ -65,21 +65,15 @@ class TestFiles:
     @allure.severity(Severity.NORMAL)
     @allure.sub_suite(AllureStory.DELETE_ENTITY)
     def test_delete_file(self, files_client: FilesClient, function_file: FileFixture):
-        # 1. Удаляем файл
         delete_response = files_client.delete_file_api(function_file.response.file.id)
-        # 2. Проверяем, что файл успешно удален (статус 200 OK)
         assert_status_code(delete_response.status_code, HTTPStatus.OK)
 
-        # 3. Пытаемся получить удаленный файл
         get_response = files_client.get_file_api(function_file.response.file.id)
         get_response_data = InternalErrorResponseSchema.model_validate_json(get_response.text)
 
-        # 4. Проверяем, что сервер вернул 404 Not Found
         assert_status_code(get_response.status_code, HTTPStatus.NOT_FOUND)
-        # 5. Проверяем, что в ответе содержится ошибка "File not found"
         assert_file_not_found_response(get_response_data)
 
-        # 6. Проверяем, что ответ соответствует схеме
         validate_json_schema(get_response.json(), get_response_data.model_json_schema())
 
     @allure.tag(AllureTag.VALIDATE_ENTITY)
@@ -95,12 +89,9 @@ class TestFiles:
         response = files_client.create_file_api(request)
         response_data = ValidationErrorResponseSchema.model_validate_json(response.text)
 
-        # Проверка, что код ответа соответствует ожиданиям (422 - Unprocessable Entity)
         assert_status_code(response.status_code, HTTPStatus.UNPROCESSABLE_ENTITY)
-        # Проверка, что ответ API соответствует ожидаемой валидационной ошибке
         assert_create_file_with_empty_filename_response(response_data)
 
-        # Дополнительная проверка структуры JSON, чтобы убедиться, что схема валидационного ответа не изменилась
         validate_json_schema(response.json(), response_data.model_json_schema())
 
     @allure.tag(AllureTag.VALIDATE_ENTITY)
@@ -116,12 +107,9 @@ class TestFiles:
         response = files_client.create_file_api(request)
         response_data = ValidationErrorResponseSchema.model_validate_json(response.text)
 
-        # Проверка, что код ответа соответствует ожиданиям (422 - Unprocessable Entity)
         assert_status_code(response.status_code, HTTPStatus.UNPROCESSABLE_ENTITY)
-        # Проверка, что ответ API соответствует ожидаемой валидационной ошибке
         assert_create_file_with_empty_directory_response(response_data)
 
-        # Дополнительная проверка структуры JSON
         validate_json_schema(response.json(), response_data.model_json_schema())
 
     @allure.tag(AllureTag.VALIDATE_ENTITY)

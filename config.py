@@ -29,7 +29,6 @@ class Settings(BaseSettings):
     http_client: HTTPClientConfig
     allure_results_dir: DirectoryPath  # Добавили новое поле
 
-    # Добавили метод initialize
     @classmethod
     def initialize(cls) -> Self:  # Возвращает экземпляр класса Settings
         allure_results_dir = DirectoryPath("./allure-results")  # Создаем объект пути к папке
@@ -39,5 +38,4 @@ class Settings(BaseSettings):
         return Settings(allure_results_dir=allure_results_dir)
 
 
-# Теперь вызываем метод initialize
 settings = Settings.initialize()

@@ -1,6 +1,7 @@
 from pydantic import BaseModel, Field
 from tools.fakers import fake
 
+
 class TokenSchema(BaseModel):
     """
     Описание структуры аутентификационных токенов.

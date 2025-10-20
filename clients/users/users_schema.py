@@ -1,6 +1,7 @@
 from pydantic import BaseModel, Field, EmailStr, ConfigDict
 from tools.fakers import fake
-from time import time
+
+
 class UserSchema(BaseModel):
     """
     Описание структуры пользователя.

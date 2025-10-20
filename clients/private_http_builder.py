@@ -9,6 +9,7 @@ from clients.event_hooks import curl_event_hook, log_request_event_hook, \
     log_response_event_hook  # Импортируем event hook
 from config import settings
 
+
 class AuthenticationUserSchema(BaseModel, frozen=True):
     email: str
     password: str
