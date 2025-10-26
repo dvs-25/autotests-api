@@ -1,0 +1,26 @@
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:37 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:37 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:37 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:37 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:37 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:27 Make GET request to http://localhost:8000/api/v1/exercises?courseId=540599c1-4abb-416b-8505-9d9c83dc89fc
+INFO     HTTP_CLIENT:event_hooks.py:37 Got response 200 OK from http://localhost:8000/api/v1/exercises?courseId=540599c1-4abb-416b-8505-9d9c83dc89fc
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:109 Check get exercises response
+INFO     BASE_ASSERTIONS:base.py:74 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:68 Check exercise
+INFO     BASE_ASSERTIONS:base.py:38 Check that "id" equals to c0e1b0f0-2d1d-4dec-81b4-c4af6b32f68a
+INFO     BASE_ASSERTIONS:base.py:38 Check that "title" equals to One beautiful foot bank rise another defense town.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "course_id" equals to 540599c1-4abb-416b-8505-9d9c83dc89fc
+INFO     BASE_ASSERTIONS:base.py:38 Check that "max_score" equals to 71
+INFO     BASE_ASSERTIONS:base.py:38 Check that "min_score" equals to 13
+INFO     BASE_ASSERTIONS:base.py:38 Check that "order_index" equals to 62
+INFO     BASE_ASSERTIONS:base.py:38 Check that "description" equals to Move sure civil hour number wind. Point act visit explain tree.
+Time modern data determine add only. Treatment image add lay or house collection. We case community ok couple eight return.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "estimated_time" equals to 5 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:22 Validating JSON schema

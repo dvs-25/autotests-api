@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI2VDE1OjM0OjE0LjU2ODc0OCIsInVzZXJfaWQiOiJjMzVkNjVjMC0yYjlkLTQ2ZjgtYjI0OS1kMzM5NjhiMmZjNTAifQ.J3nL-5COfkI8vhJW7YPuFH7U7U7zAxvSqA-gqDtPZDQ' \
+  -H 'content-length: 407' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Put memory mean join significant data.","maxScore":62,"minScore":6,"description":"Whose firm measure style because training.\nOwn fish president star win according. Network political anyone government end particularly whose paper. Look save black close my.","estimatedTime":"10 weeks","previewFileId":"272d7e54-dd4d-4f38-8ec2-8b4679dadba7","createdByUserId":"c35d65c0-2b9d-46f8-b249-d33968b2fc50"}'

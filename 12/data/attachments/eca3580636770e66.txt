@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI2VDE1OjM0OjE5LjQzMjExNyIsInVzZXJfaWQiOiJmOWEwMGRjMS1lNjU3LTQ1YjYtOTc0MS03OTkyZTFjMDE4NDcifQ.nW_SYraeYsy5ul7hDfwYQyV0IJMSJ2JgRrpng2CcX7w' \
+  -H 'content-length: 316' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Issue question these yeah another.","maxScore":85,"minScore":4,"description":"Hit sort medical out likely maintain. Evidence which part treatment design right center.","estimatedTime":"1 weeks","previewFileId":"432ed1dc-3e8f-4b86-a2ba-c0bf550960ec","createdByUserId":"f9a00dc1-e657-45b6-9741-7992e1c01847"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI2VDE1OjM0OjE3LjY2NTkxMiIsInVzZXJfaWQiOiJmNDFhYTEwZS0yNTRjLTQwY2QtOGFmZS00ODA3MDQxZjg5MGIifQ.m4DJajDCs2Q32L81w6im5JTIunVOf4lh2yDQEv-JBn0' \
+  -H 'content-length: 352' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Give home family other eye.","maxScore":85,"minScore":21,"description":"Born ready strong president capital short. About without study herself home.\nPhone for country. Yard particularly win great walk.","estimatedTime":"8 weeks","previewFileId":"411bb7cc-d33c-4c1b-9a40-7073176a54ce","createdByUserId":"f41aa10e-254c-40cd-8afe-4807041f890b"}'

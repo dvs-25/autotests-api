@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI2VDE1OjM0OjE2LjM4OTM5MSIsInVzZXJfaWQiOiIyMGUxMmVmNS0yYzZiLTQ2ZTUtOTBmYS04N2RjMjFmNjEzNTkifQ.GfWR_CIGVuFhawv3gT_BCLzjUoHs1WrJUHnYXXoGYY0' \
+  -H 'content-length: 326' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Tonight right half statement thought chance.","maxScore":66,"minScore":6,"description":"Draw whom wall like argue either sign. Live billion stay forget strategy audience home.","estimatedTime":"10 weeks","previewFileId":"223ebb74-ce65-4c33-84a7-4aeecee4cce6","createdByUserId":"20e12ef5-2c6b-46e5-90fa-87dc21f61359"}'

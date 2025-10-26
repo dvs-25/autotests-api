@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI2VDE1OjM0OjEzLjk3NjQwOCIsInVzZXJfaWQiOiI4MDMwYjRmZS1kNWEyLTQyNDMtYmQ0OC03ZTg1MmFlZjZhNmUifQ.aYq86d6UXQOeqxmLmwQULWgAsMSjtg86RqdUJ9PlXxg' \
+  -H 'content-length: 388' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Draw and response official evening wear.","maxScore":63,"minScore":21,"description":"Remain even despite themselves but food. Kid quality weight dark seat together product various.\nNow federal anything throw. New inside reality building.","estimatedTime":"5 weeks","previewFileId":"bcca7c30-4f49-4a5f-a6d2-fc706a8a6a7f","createdByUserId":"8030b4fe-d5a2-4243-bd48-7e852aef6a6e"}'

@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/8ac74abb-fb42-4e98-a78c-7c27762bb1a3' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI2VDE1OjM0OjE3LjY2NTkxMiIsInVzZXJfaWQiOiJmNDFhYTEwZS0yNTRjLTQwY2QtOGFmZS00ODA3MDQxZjg5MGIifQ.m4DJajDCs2Q32L81w6im5JTIunVOf4lh2yDQEv-JBn0' \
+  -H 'content-length: 327' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Result action health expert cause different although executive.","maxScore":75,"minScore":25,"orderIndex":78,"description":"Remember language million wear executive least. Sound energy west success. Good herself involve thousand.\nPoint both or opportunity after. Month test product place.","estimatedTime":"7 weeks"}'

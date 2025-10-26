@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI2VDE1OjM0OjE1LjgwNTA5MCIsInVzZXJfaWQiOiI5MDcyYmYyZS0xN2ZiLTQwYzYtYmVkZi01ZGY0ZGM0MmY1ZmIifQ.cTByyjbWup5d39D8aUc-_oNgiXpw8r2Lvz72doXLRe8' \
+  -H 'content-length: 364' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Control lose role nothing.","maxScore":64,"minScore":17,"description":"Trade various decision matter worry room huge bar. Understand test three next response give. Against between actually agreement senior country.","estimatedTime":"8 weeks","previewFileId":"fe16e72f-4633-45ca-88e5-3f02b93d6410","createdByUserId":"9072bf2e-17fb-40c6-bedf-5df4dc42f5fb"}'

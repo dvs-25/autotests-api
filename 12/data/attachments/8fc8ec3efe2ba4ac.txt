@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI2VDE1OjM0OjE1LjIyMzQ0OCIsInVzZXJfaWQiOiIzYjUwOWEwNy01NGYyLTRkNGEtODA4OC0wYjI1YTg0MTBmM2UifQ.HphDKPtnrixQ8evvF3jCIxc227q02KBJewAhNL-o9u8' \
+  -H 'content-length: 346' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Resource painting lot son run.","maxScore":74,"minScore":25,"description":"Professional cause for scientist.\nSociety political idea. Again hope call pay. Fact computer group.\nPm deep this wrong.","estimatedTime":"7 weeks","previewFileId":"973c27c1-5dce-4940-a719-d48aced2dfe6","createdByUserId":"3b509a07-54f2-4d4a-8088-0b25a8410f3e"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI2VDE1OjM0OjE4LjI1NDQzMyIsInVzZXJfaWQiOiI0ZjUzNTRiZi1jYjkyLTQ5MjgtODNjMy1kMWU1ZmRlMTY3OGYifQ.Z-Gmi42gRCClUitkdDt1KzmmIYUoZ0x8N62pQXAO6Hk' \
+  -H 'content-length: 264' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Its yet pretty not.","courseId":"bafd981e-7d99-4811-b77f-1e3f86b53639","maxScore":92,"minScore":3,"orderIndex":42,"description":"Able religious avoid brother campaign firm. Store bad whether according stuff mean reach product.","estimatedTime":"1 weeks"}'

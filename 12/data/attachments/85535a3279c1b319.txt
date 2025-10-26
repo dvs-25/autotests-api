@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI2VDE1OjM0OjE5LjE1ODU1MyIsInVzZXJfaWQiOiJlZjcwN2UwYi03N2IxLTQzZjAtOGExOC1jMWM3ZmJjNDY1ZDIifQ.EysbsJCkM5NiVNso20z0nDBm0EWOqTdJsKZAP8CZ4BY' \
+  -H 'content-length: 432' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Evidence remain now finally manager its.","maxScore":82,"minScore":15,"description":"Edge pressure allow executive. Happy continue participant cultural top.\nLead image career all of imagine. No increase majority become floor ability. Day side something tax someone president quite.","estimatedTime":"7 weeks","previewFileId":"f91f1486-79b4-49c4-8c71-f4502fe7a5fa","createdByUserId":"ef707e0b-77b1-43f0-8a18-c1c7fbc465d2"}'
