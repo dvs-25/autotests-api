@@ -20,5 +20,4 @@ def make_curl_from_request(request: Request) -> str:
     except RequestNotRead:
         pass
 
-    # Объединяем части с переносами строк, исключая завершающий `\`
     return " \\\n  ".join(result)

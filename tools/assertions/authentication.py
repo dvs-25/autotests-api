@@ -4,7 +4,7 @@ from clients.authentication.authentication_schema import LoginResponseSchema, Re
 from clients.errors_schema import InternalErrorResponseSchema
 from tools.assertions.base import assert_equal, assert_is_true
 from tools.assertions.errors import assert_internal_error_response
-from tools.logger import get_logger  # Импортируем функцию для создания логгера
+from tools.logger import get_logger
 
 logger = get_logger("AUTHENTICATION_ASSERTIONS")
 

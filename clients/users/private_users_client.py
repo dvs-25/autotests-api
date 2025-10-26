@@ -32,7 +32,6 @@ class PrivateUsersClient(APIClient):
         :param user_id: Идентификатор пользователя.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        # Вместо /api/v1/users используем APIRoutes.USERS
         return self.get(f"{APIRoutes.USERS}/{user_id}")
 
     @allure.step("Update user by id {user_id}")

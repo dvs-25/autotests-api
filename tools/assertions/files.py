@@ -6,9 +6,9 @@ from clients.files.files_schema import CreateFileResponseSchema, CreateFileReque
 from config import settings
 from tools.assertions.base import assert_equal
 from tools.assertions.errors import assert_validation_error_response, assert_internal_error_response
-from tools.logger import get_logger  # Импортируем функцию для создания логгера
+from tools.logger import get_logger
 
-logger = get_logger("FILES_ASSERTIONS")  # Создаем логгер с именем "FILES_ASSERTIONS"
+logger = get_logger("FILES_ASSERTIONS")
 
 
 @allure.step("Check create file response")
