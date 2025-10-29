@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI5VDExOjU5OjA2LjcwNzI4NiIsInVzZXJfaWQiOiJiYmU0YWE4Ny04M2YzLTQ2NjgtYmU3OC1hOTY4ZThmNGNlYzEifQ.8eUpLxw1-lMOh6z2QKguCCUE_Mu_i5srhcgVsv-71M8' \
+  -H 'content-length: 314' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Could at since investment customer majority.","courseId":"03245a93-5933-43e8-98cf-f6f0f9cb3f42","maxScore":85,"minScore":22,"orderIndex":86,"description":"Discuss face practice when first. Well subject pass week so check deep word.\nParty draw focus soldier mention need form.","estimatedTime":"7 weeks"}'

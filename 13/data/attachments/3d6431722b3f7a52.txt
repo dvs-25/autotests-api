@@ -1,0 +1,17 @@
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:37 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:37 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:37 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:26 Check create exercise response
+INFO     BASE_ASSERTIONS:base.py:38 Check that "title" equals to Without team hard responsibility.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "course_id" equals to 4efd9e21-1b3a-449b-91cf-cbcdb4a8026e
+INFO     BASE_ASSERTIONS:base.py:38 Check that "max_score" equals to 99
+INFO     BASE_ASSERTIONS:base.py:38 Check that "min_score" equals to 11
+INFO     BASE_ASSERTIONS:base.py:38 Check that "order_index" equals to 23
+INFO     BASE_ASSERTIONS:base.py:38 Check that "description" equals to Friend mean those cut specific. From gas energy themselves. Enjoy science serious drop.
+National firm hour charge door music hard five. Conference financial should everything point old.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "estimated_time" equals to 6 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:22 Validating JSON schema

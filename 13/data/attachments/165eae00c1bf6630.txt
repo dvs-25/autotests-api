@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI5VDExOjU5OjA0Ljk2OTMxMiIsInVzZXJfaWQiOiIyNGY4YzVjYS1hZWQwLTRkZDktYjViZS03NzRkN2RjNTRmMDcifQ.VpGhhr0w0Unmee3FYhmDVFcSq7r4UwdU4ht5m8yBf7Y' \
+  -H 'content-length: 355' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Because TV never let face seven pick.","maxScore":72,"minScore":23,"description":"Blood notice affect sound nor I daughter seat. Provide free statement assume. Science subject drop seat partner team learn.","estimatedTime":"1 weeks","previewFileId":"a8af20f1-69a8-478d-8aea-02d578af3686","createdByUserId":"24f8c5ca-aed0-4dd9-b5be-774d7dc54f07"}'

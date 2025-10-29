@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/8a848eb1-f6ce-45e5-9258-759b10369612' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI5VDExOjU5OjAwLjk5ODExNSIsInVzZXJfaWQiOiJlZWJkM2VlMC0zNDM2LTQwY2YtODM5Ni01ZmMzMTQ5MjU2NGQifQ.YuenpKrbiT76Zb2GxnMwtV_78bXN4bP1B6xeDj5qGl4' \
+  -H 'content-length: 248' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Level head few think quality very expect.","maxScore":69,"minScore":19,"description":"Piece month many involve. Effort notice quickly information feeling help major. Such matter avoid question especially power.","estimatedTime":"2 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI5VDExOjU5OjA1LjU1MjkwMCIsInVzZXJfaWQiOiJlZTRkNjUwMi1hZDQzLTQzMGUtYjJhNS0xMjY3ZmNkN2VkZGIifQ.Bry4VY1cY8utICK0oSFgJbogHRWNYHEnJ0nE5BLlbhk' \
+  -H 'content-length: 368' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Without team hard responsibility.","courseId":"4efd9e21-1b3a-449b-91cf-cbcdb4a8026e","maxScore":99,"minScore":11,"orderIndex":23,"description":"Friend mean those cut specific. From gas energy themselves. Enjoy science serious drop.\nNational firm hour charge door music hard five. Conference financial should everything point old.","estimatedTime":"6 weeks"}'

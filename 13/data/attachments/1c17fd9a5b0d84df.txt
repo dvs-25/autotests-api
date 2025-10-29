@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI5VDExOjU4OjU5LjU3NzQ3OSIsInVzZXJfaWQiOiIyOWM4Yjk2Ny04ZGQ4LTQzZTItOGQ2YS1hMmY0ZjFlNmFmYjIifQ.X-KJfrNS5Taty-F7x3WikLtFdOOcWwFrpkTHfXZBehE' \
+  -H 'content-length: 325' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Position close up dinner woman continue what likely.","maxScore":67,"minScore":22,"description":"Wear have than relate program of car drop. Push speak house grow own live any.","estimatedTime":"3 weeks","previewFileId":"51bd04b4-86e4-4e8b-a0e4-09524fe42224","createdByUserId":"29c8b967-8dd8-43e2-8d6a-a2f4f1e6afb2"}'

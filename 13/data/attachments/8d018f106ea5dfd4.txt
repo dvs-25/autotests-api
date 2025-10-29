@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI5VDExOjU5OjAwLjk5ODExNSIsInVzZXJfaWQiOiJlZWJkM2VlMC0zNDM2LTQwY2YtODM5Ni01ZmMzMTQ5MjU2NGQifQ.YuenpKrbiT76Zb2GxnMwtV_78bXN4bP1B6xeDj5qGl4' \
+  -H 'content-length: 348' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Miss seem body talk son agency might.","maxScore":66,"minScore":2,"description":"Reason remember seat idea out decision. Could he start gas side. Yourself black hold allow officer fine nearly value.","estimatedTime":"2 weeks","previewFileId":"3e206e96-8d32-4dc4-833c-b429f5708adc","createdByUserId":"eebd3ee0-3436-40cf-8396-5fc31492564d"}'

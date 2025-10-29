@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI5VDExOjU5OjAzLjQyNjMxMCIsInVzZXJfaWQiOiJlZTI2ZjlhNS0wNTkwLTQ1YmItODljNy1iNTJkNmNhYTMzNTAifQ.k5BQrfvqXtNNpjwbKBo98gitOXGkTR3sc1Fe9rFg1N8' \
+  -H 'content-length: 391' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Worry remember type animal particularly box around.","maxScore":77,"minScore":6,"description":"Situation expert significant citizen.\nBring charge onto budget one travel once. Opportunity science interest open either. And give house perhaps.","estimatedTime":"3 weeks","previewFileId":"30869da6-40da-4503-8c87-3d55782bde9c","createdByUserId":"ee26f9a5-0590-45bb-89c7-b52d6caa3350"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI5VDExOjU5OjAzLjY5OTA0MCIsInVzZXJfaWQiOiIwNzQ3MDJiNC0zZjZhLTRiMjMtYTA3OS0wZDg3MWU3MmQwNjQifQ.SwfwincY9STzroLCaaTciki4-_jU48BBrpdHujPiNAk' \
+  -H 'content-length: 398' \
+  -H 'content-type: application/json' \
+  -d '{"title":"According PM find sing bad evidence later.","maxScore":85,"minScore":4,"description":"Add year happy soon develop authority perform. Itself begin century sometimes four political sound.\nLand option glass should deep exist. Contain somebody color.","estimatedTime":"10 weeks","previewFileId":"8b670a20-2039-43f0-91fe-b640974c9c79","createdByUserId":"074702b4-3f6a-4b23-a079-0d871e72d064"}'

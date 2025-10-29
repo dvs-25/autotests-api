@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI5VDExOjU5OjA2LjQzNDM4NSIsInVzZXJfaWQiOiI0NGFkYjI5My1mZDYyLTQ2MDEtODkwYy1hMGI2ZmEzZjBjNTUifQ.YJ99RgNeTGOExdJCJwHxip3-ZtvDVYiyXmpKxcUv5-M' \
+  -H 'content-length: 379' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Artist and wife peace.","maxScore":61,"minScore":15,"description":"Attorney crime writer every. Area movement whole use.\nMuch nation that why true low bring. Animal anything you class follow word. Drug apply eight stage without.","estimatedTime":"5 weeks","previewFileId":"4bdeb65b-1e0a-419d-a5af-1ac343706caa","createdByUserId":"44adb293-fd62-4601-890c-a0b6fa3f0c55"}'

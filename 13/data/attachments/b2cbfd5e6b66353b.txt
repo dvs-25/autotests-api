@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/00f1ddf5-c61f-4182-8b22-ddee53259cd6' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI5VDExOjU5OjA0Ljk2OTMxMiIsInVzZXJfaWQiOiIyNGY4YzVjYS1hZWQwLTRkZDktYjViZS03NzRkN2RjNTRmMDcifQ.VpGhhr0w0Unmee3FYhmDVFcSq7r4UwdU4ht5m8yBf7Y' \
+  -H 'content-length: 322' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Job suffer responsibility cost.","maxScore":83,"minScore":27,"orderIndex":36,"description":"Teacher shake article these attack adult make and. Miss thousand base environment traditional certain treat.\nPartner north lawyer show. Give economic central determine data throughout modern.","estimatedTime":"1 weeks"}'

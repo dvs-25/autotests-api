@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI5VDExOjU5OjA0Ljk2OTMxMiIsInVzZXJfaWQiOiIyNGY4YzVjYS1hZWQwLTRkZDktYjViZS03NzRkN2RjNTRmMDcifQ.VpGhhr0w0Unmee3FYhmDVFcSq7r4UwdU4ht5m8yBf7Y' \
+  -H 'content-length: 289' \
+  -H 'content-type: application/json' \
+  -d '{"title":"That some this force positive begin.","courseId":"249eb3f4-05b2-412d-a0a5-464dab47a1f7","maxScore":96,"minScore":7,"orderIndex":48,"description":"Lose without do give fire. Happy serious between beat speak hot. Issue data position minute quickly tree.","estimatedTime":"6 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI5VDExOjU5OjA2LjcwNzI4NiIsInVzZXJfaWQiOiJiYmU0YWE4Ny04M2YzLTQ2NjgtYmU3OC1hOTY4ZThmNGNlYzEifQ.8eUpLxw1-lMOh6z2QKguCCUE_Mu_i5srhcgVsv-71M8' \
+  -H 'content-length: 358' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Case hour item recent.","maxScore":77,"minScore":20,"description":"Relationship agreement whether pay weight full political. Final remember necessary ever answer. End out practice owner his less memory class.","estimatedTime":"7 weeks","previewFileId":"61133c74-1ce1-4819-afbc-af8899260a62","createdByUserId":"bbe4aa87-83f3-4668-be78-a968e8f4cec1"}'

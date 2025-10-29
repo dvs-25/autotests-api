@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTI5VDExOjU5OjAyLjIyMDEyNSIsInVzZXJfaWQiOiI3ZTZmM2EzYS1jZDBiLTQ3OWItYjMxZS1iODcwODZjMTdmYmMifQ.SeBBOeK8NmpMF9GjwFFhdpqJyKOOlczDx2NMMHVprkI' \
+  -H 'content-length: 401' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Price term model best game resource.","maxScore":55,"minScore":9,"description":"Approach true leg deep himself. Week seem tend can inside region. Visit for century blue suffer reveal.\nWe account religious yeah son whose. Pretty range member live and.","estimatedTime":"7 weeks","previewFileId":"aeca0017-549f-462b-bbe4-4f6d6037b03a","createdByUserId":"7e6f3a3a-cd0b-479b-b31e-b87086c17fbc"}'

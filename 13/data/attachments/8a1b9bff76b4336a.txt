@@ -1,0 +1,16 @@
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:37 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:37 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:37 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:27 Make DELETE request to http://localhost:8000/api/v1/users/6528d7b2-977f-49ea-9029-fc6d977d3820
+INFO     HTTP_CLIENT:event_hooks.py:37 Got response 200 OK from http://localhost:8000/api/v1/users/6528d7b2-977f-49ea-9029-fc6d977d3820
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     HTTP_CLIENT:event_hooks.py:27 Make GET request to http://localhost:8000/api/v1/users/6528d7b2-977f-49ea-9029-fc6d977d3820
+INFO     HTTP_CLIENT:event_hooks.py:37 Got response 404 Not Found from http://localhost:8000/api/v1/users/6528d7b2-977f-49ea-9029-fc6d977d3820
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 404
+INFO     USERS_ASSERTIONS:users.py:87 Check user not found response
+INFO     ERRORS_ASSERTIONS:errors.py:59 Check internal error response
+INFO     BASE_ASSERTIONS:base.py:38 Check that "details" equals to User not found
+INFO     SCHEMA_ASSERTIONS:schema.py:22 Validating JSON schema

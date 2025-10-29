@@ -1,0 +1,20 @@
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:37 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:37 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:37 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:37 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:87 Check create course response
+INFO     BASE_ASSERTIONS:base.py:38 Check that "title" equals to High protect majority coach.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "max_score" equals to 94
+INFO     BASE_ASSERTIONS:base.py:38 Check that "min_score" equals to 22
+INFO     BASE_ASSERTIONS:base.py:38 Check that "description" equals to Really region term career. Air box report morning claim. Hear consider trade pass bed.
+Several these medical management. Produce suffer student service write military.
+Choice draw example.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "estimated_time" equals to 2 weeks
+INFO     BASE_ASSERTIONS:base.py:38 Check that "preview_file_id" equals to 1da1b045-0bbe-4c0a-b9ad-dfd6ba3b09b4
+INFO     BASE_ASSERTIONS:base.py:38 Check that "created_by_user_id" equals to 1994c1b8-d435-4889-904d-f5a388577107
+INFO     SCHEMA_ASSERTIONS:schema.py:22 Validating JSON schema
